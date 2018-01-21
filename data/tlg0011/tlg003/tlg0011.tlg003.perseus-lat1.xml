@@ -1,0 +1,3189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="work" n="Aj.">Aiax Lorarius (Latine, 1574)</title>
+            <title type="sub">Machine readable text</title>
+            <author n="Soph.">Sophocles</author>
+            <editor role="editor" n="Scaliger">Josephus Justus Scaliger</editor>
+            <respStmt>
+               <resp>Hanc editionem electronicam curavit</resp>
+               <persName instant="false" full="yes">
+                  <ref type="viaf" target="6913774">Neven Jovanović</ref>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <extent>About 90Kb</extent>
+         <publicationStmt>
+		          <publisher>Trustees of Tufts University</publisher>
+		          <pubPlace>Medford, MA</pubPlace>
+		          <authority>Perseus Project</authority>
+		       </publicationStmt>
+         <sourceDesc default="false">
+            <biblStruct default="false" status="draft">
+               <monogr>
+                  <author>Scaliger, Joseph J.</author>
+                  <title>Iosephi Scaligeri Poemata Omnia, Ex Museio Petri Scriverii.</title>
+                  <imprint>
+                     <pubPlace>Berolini</pubPlace>
+                     <publisher>A. Bath</publisher>
+                     <date instant="false">1864</date>
+                  </imprint>
+                  <biblScope unit="page" from="291" to="331">
+                     <title>Sophoclis Aiax Lorarius, stylo tragico a Iosepho Scaligero Iulii filio
+                        translatus</title>
+                  </biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+
+      <encodingDesc>
+         <!--<refsDecl n="CTS">
+            
+            <cRefPattern n="card" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+               <p>This pointer pattern extracts cards</p>
+            </cRefPattern>
+            
+         </refsDecl>-->
+         <refsDecl n="CTS" default="false">
+            <cRefPattern n="line"
+                         matchPattern="(\w+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:l[@n='$1'])">
+               <p part="N">This pointer pattern extracts lines</p>
+            </cRefPattern>
+            
+         </refsDecl>
+      </encodingDesc>
+
+      <profileDesc>
+         <langUsage default="false">
+            <language ident="lat">Latin</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change status="draft">
+            First XML version
+            <persName instant="false" full="yes">Neven Jovanovic</persName>
+            <date instant="false">2018-01-20</date>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text xml:lang="lat">
+      <front>
+         <div type="edition" xml:lang="grc">
+            <head>ΙΩΑΝΝΟΥ ΓΑΡΔΕΣΙΟΥ εἰς Ἰώσιππον Σκάλανoν τόν τοῦ Σοφοκλέους Αἴαντα
+               μεθερμηνεύσαντα.</head>
+            <l>Οἴστρῳ ἀμερσινόῳ πληγείς ποτε θούριος Αἴας</l>
+            <l>Νυκτιμανεῖ, κεραοῖς ἔνθoρε βoυσὶ ποδί.</l>
+            <l>Αὐτοῦ δ' ἀντιβίους ἔμεναι δὴ πάμπαν ὀίω</l>
+            <l>Κείνους αὐτοῖσιν τοῖσι βοτῆρσιν ἕλε.</l>
+            <l>Τὴν ῥα οἱ ἐν νόσον ὦρσε κακὴν γλαυκῶπις Αθήνη,</l>
+            <l> Ἔγκυον ἀφροσύνης ὄμμασι χῦσα νέφος.</l>
+            <l> Ἥ τ' αὐτὴ δὲ θεὰ μανίης Σκάλαν' ἔμφρoνος ἦτορ</l>
+            <l>Σεμνομανὲς κέντρῳ ὀξυσόφῳ σε τύπε·</l>
+            <l>Ω μὲν ἐνὶ πραπίδεσσι τεαῖς μάλα πόλλ' ἐρεθισχεὶς</l>
+            <l>Δαιμόνι' οὔτε βόας, οὔτε βοτῆρας ἕλες.</l>
+            <l>᾿Αλλ' Ἄϊδός δε πυλάρταο θρασυκάρδιος ὁρμῶν,</l>
+            <l>Χ' ἅτερος Ἡρακλέης κερβερόνικος ἐών,</l>
+            <l>Χειρὶ φερεσβίῳ ἄμμιν ἀνήγαγες Ἄκκιον εἰς φῶς</l>
+            <l>Μὰψ δὴ ὑλακτεαῦντός σοι μετόπισθε κυνός.</l>
+         </div>
+         <div type="edition" xml:lang="grc">
+            <head>Τοῦ αὐτοῦ εἰς τὸν αὐτόν.</head>
+            <l>Ἔα τί τοῦτο; τί χρέος θεήλατον;</l>
+            <l>᾿Ενθουσιασμοῦ συγγενοῦς καὶ συντρόφου</l>
+            <l>῎Οντος γ' ἐλευθερίᾳ, Σκάλανε, πῶς δῆτ' ἔπη</l>
+            <l>῞Εκαστ' ἑκάστων ἀνταμείβεις τῶν ἐπών;</l>
+            <l>Καὶ πῶς ἀνάγκης τοὔμπαλιν δεσμοῖς δεθεὶς</l>
+            <l>Σὺ μηδὲν ἐκφαίνεις ἔπος ἀνελεύθερον;</l>
+         </div>
+      </front>
+      <body>
+         <div type="translation"
+              n="urn:cts:greekLit:tlg0011.tlg003.perseus-lat1"
+              xml:lang="lat"
+              part="N"
+              org="uniform"
+              sample="complete">
+            <head>Sophoclis Aiax Lorarius, stylo tragico a Iosepho Scaligero Iulii filio
+               translatus.</head>
+            <pb n="291"/>
+            <listPerson default="false">
+               <head>Personae fabulae.</head>
+               <person instant="false">
+                  <persName instant="false" full="yes">Minerua</persName>
+               </person>
+               <person instant="false">
+                  <persName instant="false" full="yes">Nuntius</persName>
+               </person>
+               <person instant="false">
+                  <persName instant="false" full="yes">Vlysses</persName>
+               </person>
+               <person instant="false">
+                  <persName instant="false" full="yes">Teucer</persName>
+               </person>
+               <person instant="false">
+                  <persName instant="false" full="yes">Aiax</persName>
+               </person>
+               <person instant="false">
+                  <persName instant="false" full="yes">Menelaus</persName>
+               </person>
+               <person instant="false">
+                  <persName instant="false" full="yes">Tecmessa</persName>
+               </person>
+               <person instant="false">
+                  <persName instant="false" full="yes">Agamemnon</persName>
+               </person>
+               <person instant="false">
+                  <persName instant="false" full="yes">Chorus Salaminiorum sociorum</persName>
+               </person>
+            </listPerson>
+            <milestone unit="card" n="1" resp="p"/>
+            <div type="textpart"
+                 subtype="episode"
+                 part="N"
+                 org="uniform"
+                 sample="complete">
+
+               <head>ACTVS PRIMVS.</head>
+               <stage>Minerua, Vlysses, Aiax.</stage>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="1">Iam video, Vlysse, saepe te venatice</l>
+                  <l n="2">Captasse, vt artes hosticas praeuorteres,</l>
+                  <l n="3">Teque adeo ad ipsam commodum classem vltimam</l>
+                  <l n="4">Aiacis, vbi post principia tendit, tuor</l>
+                  <l n="5">Ruspantem, et olim metientem sedulo</l>
+                  <l n="6">Notis adulta nuperis vestigia,</l>
+                  <l n="7">Vt intus, an foras sit, oculis aucupes.</l>
+                  <l n="8">
+                     <orig>Bene</orig> autem es assectatus, vt canis sagax.</l>
+                  <l n="9">Nanque intus ellum est haud diu, caput</l>
+                  <l n="10">Sudore manans atque carnufices manus.</l>
+                  <l n="11">Quare intus inspectare, nec tibi integrum est,</l>
+                  <l n="12">Omitte: tantum fare, quoius gratia</l>
+                  <pb n="4" type="page"/>
+                  <l n="13">Tam satagis, omne vt, quicquid huius est, loquar.</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="14">O mihi Dearum <orig>cara</orig> maxume omnium</l>
+                  <l n="15">Minerua, quam vel eminus clare tuam</l>
+                  <l n="16">Vocem aure capio, et mente suspensa haurio.</l>
+                  <pb n="292"/>
+                  <l n="17">Qualis tubae sentitur aeneae sonor.</l>
+                  <l n="18">Recteque sensti me mihi infensissumum</l>
+                  <l n="19">Aiacem odora circuire indagine.</l>
+                  <l n="20">Ita est, eum venamur, haud alium, Dea.</l>
+                  <l n="21">Nam facinus ista nocte caecum, nescium,</l>
+                  <l n="22">Ancepsque fecit ille, si fecit tamen.</l>
+                  <l n="23">Nil scimus etenim mentis errore auii.</l>
+                  <l n="24">Quare hoc subiui sponte perferens onus.</l>
+                  <l n="25">Nam pecua, nuper parta bellica manu,</l>
+                  <l n="26">Iugulata, strata, sauciata <orig>foediter</orig>,</l>
+                  <l n="27">Manu, magistris cum suis offendimus.</l>
+                  <l n="28">Factique eum omnis huius auctorem facit.</l>
+                  <l n="29">Huc adde, quod speculator hunc solum omnium,</l>
+                  <l n="30">Campos cruento dum ense persultat furens,</l>
+                  <l n="31">Viditque retulitque. Ego actutum impete</l>
+                  <l n="32">Vestigo, odoro. haec signa non dubie noto,</l>
+                  <l n="33">Ast illa miror, cuia sint non assequor.</l>
+                  <l n="34">Sed affuisti tempori, siquidem tua</l>
+                  <l n="35">Me nunc, et olim rexit, et reget manus.</l>
+               </sp>
+               <milestone unit="card" n="36" resp="p"/>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="36">Persensi, Vlysse, iamque dum venaturis,</l>
+                  <l n="37">Viam tibi istam sponte custos institi.</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="38">Bene hic, secusne coeptum est mihi labos?</l>
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="39">Liquido putasti: fecit ille, me vide.</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="40">Nam cur et ausus ille tam caecum nefas?</l>
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="41">Achillis arma, addicta non sibi dolet.</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="42">Cur sic furente fertur in greges gradu?</l>
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="43">Vestro manus foedare sperans sanguine.</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="44">Incogitabat, inquis, Argiuis malum?</l>
+
+
+                  <pb n="5" type="page"/>
+
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="45">Quin absque me fuisset, et patrauerat.</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="46">Quibusne <orig>coeptis</orig>, quove mentis impetu?</l>
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="47">Irrupit ad vos nocte solus, et dolo.</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="48">Peruenit igitur, atque metas attigit?</l>
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="49">Institerat adeo vtrique iam praetorio.</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="50">Quis rapida ouantem caede repressit manum?</l>
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="51">Aliena captis sensa ocellis oggerens</l>
+                  <l n="52">Hominis retundo gaudium immedicabile.</l>
+                  <l n="53">Et ad gregem miscella lanigerum agmina,</l>
+                  <pb n="293"/>
+                  <l n="54">Promiscuique volgus armenti auoco.</l>
+                  <l n="55">Ibi buceras sternebat animantes, nihil</l>
+                  <l n="56">Parcens furori: modo cruenta credulus</l>
+                  <l n="57">Manu necare gemina Atridas corpora:</l>
+                  <l n="58">Modo hunc, modo illum scilicet mactans ducem.</l>
+                  <l n="59">Ast ego virum furore torrentem vago</l>
+                  <l n="60">Vrgebam, in altos induens casses mali.</l>
+                  <l n="61">Postquam remisit vis furoris de nece,</l>
+                  <l n="62">Armenta uiua compedarum vinculis</l>
+                  <l n="63">Captiua sed cum gregibus abducit domum,</l>
+                  <l n="64">Homines putans abigere, non brutos greges;</l>
+                  <l n="65">Quos nunc flagellis accipit vinctos male.</l>
+                  <l n="66">Age <orig>huncce</orig> sodes indicem morbum tibi,</l>
+                  <l n="67">In volgus vt eum differas, vbi videris.</l>
+                  <l n="68">Ne <orig>defetisce</orig>, neve deputa in malo</l>
+                  <l n="69">Hominem videre. luminum auersos ego</l>
+                  <l n="70">Orbes reflectam quominus te viderit.</l>
+                  <l n="71">O qui reuinctis manibus abducta agis</l>
+                  <l n="72">Hominum cateruam, huc <orig>adesdum</orig>, te voco.</l>
+                  <l n="73">Aiax tibi, inquam, dico. iam prodi foras.</l>
+               </sp>
+               <milestone unit="card" n="74" resp="p"/>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="74">Quid agis, Minerua? ne foras hominem euoca.</l>
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="75"><orig>Potin</orig> es tacere? nec tibi metum <orig>obiice</orig>.</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="76">Ne, amabo: sed contineat intus se domi.</l>
+
+                  <pb n="6" type="page"/>
+
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="77">Frustra vereris. non vir idem est, qui prius.</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="78">Mihi hostis idem est ipse, qui prius fuit.</l>
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="79">Illudere hosti ludus est suauissumus.</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="80">Mihi quidem <orig>isthunc</orig> intus includi sat est.</l>
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="81">Hominem videre mentis impotem fugis?</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="82">Videre mentis compotem compos queam.</l>
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="83">At non videbit te quidem, quamuis prope.</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="84">Cur non, si idem oculis lumen usurpat, potest?</l>
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="85">Faxo te vt oculis vel videns non viderit.</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="86">Mutare magnum fas nefasque Diis leue est.</l>
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="87">Tace, et quiesce, teque in hoc statu tene.</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="88">Certum est tenere, sed foris mallem tamen.</l>
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="89">Heus te, <orig>audin'</orig>? Aiax rursus appello, huc ades.</l>
+                  <l n="90">Cur numen auxiliare tam parui facis?</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="91">Salue Minerua, maxumi proles Iouis.</l>
+                  <l n="92">Bene ades, et opportuna. te spoliis ego</l>
+                  <l n="93">Mactabo opimis propter hanc praedam quidem.</l>
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="94">Sapis. sed illud quod rogo narra mihi.</l>
+                  <l n="95">Hastam imbuisti sanguine Argiuo tuam?</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="96">Et gloriari fas mihi est, et non negem.</l>
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="97">Aduorsum Atridas nempe molitus manum es?</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="98">Non fiat illis ludus Aiax amplius.</l>
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="99">Actum est, vt inquis: occiderunt ilicet:</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="100">Nunc auferant mihi arma mortui mea.</l>
+               </sp>
+               <milestone unit="card" n="101" resp="p"/>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="101">Quid vero Vlysses ille Laerta satus?</l>
+                  <l n="102">Quo res loco illi est? an tuam effugit manum?</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="103">Sacramne volpem quo sit in statu rogas?</l>
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="104">Ipsum, inquam, Vlyssem male tibi infestum caput.</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="105">Gratissimum intus assidet spectaculum</l>
+                  <l n="106">Captiuus, ipsum quod mori nondum velim.</l>
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="107">Quidnam priusquam aggredere? quid facies lucri?</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="108">Priusquam ad altae columen euinctus domus,</l>
+                  <pb n="7" type="page"/>
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="109">Quodnam misello grande moliris malum?</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="110">Caesus flagellis efflet animam denique.</l>
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="111">Ne miserum amabo, ne hunc ita accipias male.</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="112">Sperare in alijs, Diua, te iubeo bene.</l>
+                  <l n="113">Supplicium ad istum is, nec secus, dabit modum.</l>
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="114">Postquam hoc in animo est sat tibi acceptum, ilicet,</l>
+                  <l n="115">Ne parce dextrae, cogitata perfice.</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="116">Accingor ad rem: caeterum mando tibi</l>
+                  <l n="117">Vt tale praestes semper auxilium mihi.</l>
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="118">Vides, Vlysse, vim Deorum, quanta sit?</l>
+                  <l n="119">Hoc homine rerum qui fuit consultior,</l>
+                  <l n="120">Vel melior antehac coepta mature exequi?</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="121">Nullum quidem antehac: mihique miseritudine</l>
+                  <l n="122">Commouit animum, quanquam iniquior mihi est,</l>
+                  <l n="123">Quod tali inhaerens ipse conflictet malo.</l>
+                  <l n="124">Nec illius rem, quam meam, specto magis.</l>
+                  <l n="125">Nil certus aliud esse nos, quam somnia</l>
+                  <l n="126">Imaginantum, aut corpora vmbrae inania.</l>
+               </sp>
+               <sp>
+                  <speaker>Minerua.</speaker>
+                  <l n="127">Ergo cauebis haec videns, temerarium</l>
+                  <l n="128">Dictum, <orig>prophanumve</orig> in Deos effutias.</l>
+                  <l n="129">Nec insolescas, si vel vlli praenites</l>
+                  <l n="130">Virtute belli, siue vastis copiis.</l>
+                  <l n="131">Nanque vna tollit, vna deprimit dies</l>
+                  <l n="132">Mortalium res, et boni semper viri</l>
+                  <l n="133">Curae Deis sunt, contra at inuisi mali.</l>
+               </sp>
+               <milestone unit="card" n="134" resp="p"/>
+               <div type="textpart"
+                    subtype="anapests"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <l n="134">Telamoniada,qui fundamina</l>
+                     <l n="135">Salaminis habes firma marinae;</l>
+                     <l n="136">Bene cum tibi fit, bene laetor.</l>
+                     <l n="137">Cum te inimico languere Ioue</l>
+                     <l n="138">Differt Danaum fama maligna:</l>
+                     <l n="139">Mens mihi refugit, totusque tremo,</l>
+                     <l n="140">Trepida vt terrore columba.</l>
+                     <pb n="8" type="page"/>
+                     <l n="141">Vt praeterita nocte tumultus</l>
+                     <l n="142">Nos famigerant rumore malo,</l>
+                     <l n="143">Te pede rabido persultantem</l>
+                     <l n="144">Vbera prati praedatitias</l>
+                     <l n="145">Danaum pecudes,</l>
+                     <l n="146">Quae super ipsis fuerant reliquae,</l>
+                     <l n="147">Ferro vastasse cruento.</l>
+                     <l n="148">Talia fictis probra susurris</l>
+                     <l n="149">Omnium in aures spargit Vlysses.</l>
+                     <l n="150">Creditur illi: nec sine multa</l>
+                     <l n="151">Suada excipitur: suasu et ipse</l>
+                     <l n="152">Suasore magis strepit auditor.</l>
+                     <l n="153">Tua risu facta lacessens.</l>
+                     <l n="154">Qui magna petit corpora telo</l>
+                     <l n="155">Nullus aberrat. Dixerit in me</l>
+                     <l n="156">Quis tale,fidem nullus habebit.</l>
+                     <l n="157">Nam felices petit inuidia.</l>
+                     <l n="158">At sine magnis ipsi parui,</l>
+                     <l n="159">Intutum arcis sunt praesidium.</l>
+                     <l n="160">Nam cum diuite bene plebs rem gerit,</l>
+                     <l n="161">Diues cum plebe fouetur.</l>
+                     <l n="162">Verum talia sensa docere</l>
+                     <l n="163">Non possis corda supina.</l>
+                     <l n="164">Ea circumstrepit hominum turba.</l>
+                     <l n="165">Nec nos contra conferre pedem</l>
+                     <l n="166">Possumus, absente modo te.</l>
+                     <l n="167">Vt conspectum fugere tuum,</l>
+                     <l n="168">Strepitant, qualis defuncta metu</l>
+                     <l n="169">Vulturi, auium turba volantum.</l>
+                     <l n="170">Quod si subitis citus existas,</l>
+                     <l n="171">Muti fugiant trepidanter.</l>
+                  </sp>
+                  <pb n="9" type="page"/>
+               </div>
+            </div>
+
+            <milestone unit="card" n="172" resp="p"/>
+            <div type="textpart"
+                 subtype="choral"
+                 part="N"
+                 org="uniform"
+                 sample="complete">
+               <div type="textpart"
+                    subtype="strophe"
+                    n="1"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <stage>Stropha <num>XI</num>.</stage>
+                     <l n="172">Anne Diana tuum soboles Iouis</l>
+                     <l n="173">(Ah fera fama, fera</l>
+                     <l n="174">Mater ah probri mei)</l>
+                     <l n="175">In volgus armentorum animum furiauit,</l>
+                     <l n="176">Aut orba fructu debito victoriae</l>
+                     <l n="177">Aut spoliorum aliquo</l>
+                     <l n="178">Frustrata honore, aut <num>hinulei</num> exuuiis?</l>
+                     <l n="179">Bellonane an Mars supplicium rabide</l>
+                     <l n="180">Poscens, calen-</l>
+                     <l n="181">-te sanguine, noctiuagis vindicis</l>
+                     <l n="182">Furoribus irae.</l>
+                  </sp>
+               </div>
+               <milestone unit="card" n="182" resp="p"/>
+
+               <div type="textpart"
+                    subtype="antistrophe"
+                    n="1"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <stage>Antistropha <num>XI</num>.</stage>
+                     <l n="183">Non te adeo usque sinister agit furor,</l>
+                     <l n="184">O Telamoniada,</l>
+                     <l n="185">In greges vt tu irruas.</l>
+                     <l n="186">Haec caelitum vis est mage Iuppiter auer-</l>
+                     <l n="187">-runcate volgi, et Phoebe, rumores malos.</l>
+                     <l n="188">Sin sua composito</l>
+                     <l n="189">Commenta fingunt arte mala proceres,</l>
+                     <l n="190">Aut acre cauti Sisyphidae genus:</l>
+                     <l n="191">Ne, si sapis,</l>
+                     <l n="192">Ad haec, rogo, castra manens deside,</l>
+                     <l n="193">Probro tibi ne sit.</l>
+                  </sp>
+               </div>
+               <milestone unit="card" n="193" resp="p"/>
+
+               <div type="textpart"
+                    subtype="epode"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <stage>Epodus <num>VII</num>.</stage>
+                     <l n="194">Linque sedilia: surge: vbi plus sat longo</l>
+                     <l n="195">Lente exercitus immoraris otio,</l>
+                     <l n="196">Dira incendia ventilans.</l>
+                     <l n="197">Impune proterua vis linguae</l>
+                     <l n="198">Ventique secura lasciui</l>
+                     <l n="199">Iniurioso miscet di-</l>
+                     <l n="200">-cta cachinno. At dolore ego configor.</l>
+                  </sp>
+               </div>
+               <pb n="10" type="page"/>
+            </div>
+            <milestone unit="card" n="201" resp="p"/>
+            <div type="textpart"
+                 subtype="episode"
+                 part="N"
+                 org="uniform"
+                 sample="complete">
+               <head>ACTVS SECVNDVS</head>
+               <div type="textpart"
+                    subtype="anapests"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Tecmessa.</speaker>
+                     <l n="201">Socii Aiacis, classica pubes,</l>
+                     <l n="202">Nobile prisci germen Erechthei,</l>
+                     <l n="203">Quantis versat fluctibus animi</l>
+                     <l n="204"><orig>Telamoniaci</orig> nos cura laris.</l>
+                     <l n="205">En ferus Aiax, pectore crudo,</l>
+                     <l n="206">Perditus, ager</l>
+                     <l n="207">Aestu conflictat iniquo.</l>
+                  </sp>
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <l n="208">Quod praeterita nocte quietem</l>
+                     <l n="209">Mutauit onus,</l>
+                     <l n="210">Filia Phrygii <orig>Teleutantis</orig>?</l>
+                     <l n="211">Dic: nam seruam te ferus Aiax</l>
+                     <l n="212">Socia lecti parte recepit,</l>
+                     <l n="213">Vt te nescire nefas sit.</l>
+                  </sp>
+               </div>
+            </div>
+
+            <div type="textpart"
+                 subtype="choral"
+                 part="N"
+                 org="uniform"
+                 sample="complete">
+               <div type="textpart"
+                    subtype="anapests"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Tecmessa.</speaker>
+                     <l n="214">Ardua dictu dicta profabor.</l>
+                     <l n="215">Leti similem morbum audite.</l>
+                     <l n="216">Efferus iris, animique vagus</l>
+                     <l n="217">Infandum Aiax ausus in vmbra est.</l>
+                     <l n="218">Talia iam licet intus cernere</l>
+                     <l n="219">Patrata manu sacra cruenta,</l>
+                     <l n="220">Pulchra viri gesta furentis.</l>
+                  </sp>
+               </div>
+               <milestone unit="card" n="221" resp="p"/>
+               <div type="textpart"
+                    subtype="strophe"
+                    n="1"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <stage>Strophe <num>XII</num>.</stage>
+                     <l n="221">Mira indicas, mira torui</l>
+                     <l n="222">Facta refers hominis</l>
+                     <l n="223">Iniqua, <orig>inexplicanda</orig>:</l>
+                     <l n="224">Quae proceres Danai</l>
+                     <l n="225">Male famigerant.</l>
+                     <l n="226">Quaeque procax rumor acerbat.</l>
+                     <l n="227">Hem quem exitum res habitura est?</l>
+                     <l n="228">Habet hoc. furore</l>
+                     <l n="229">Sibi iam afferet ille</l>
+                     <l n="230">Manus: quippe qui tot</l>
+
+                     <pb n="11" type="page"/>
+
+                     <l n="231">Opimos gladio greges</l>
+                     <l n="232"><orig>Impetiit</orig> gregumque duces.</l>
+                  </sp>
+               </div>
+               <milestone unit="card" n="233" resp="p"/>
+
+               <div type="textpart"
+                    subtype="anapests"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Tecmessa.</speaker>
+                     <l n="233">Me miseram: amens inde inde foris</l>
+                     <l n="234">Captiua manu traxit pascua.</l>
+                     <l n="235">Partem in nuda iugulauit humo.</l>
+                     <l n="236">Partem mediam male dissecuit.</l>
+                     <l n="237">Duo lanigeri proceres pecoris,</l>
+                     <l n="238">Illum capite, et lingua truncat.</l>
+                     <l n="239">Hunc destituit rectum ad medii</l>
+                     <l n="240">Columen tecti.</l>
+                     <l n="241">Et fera quassans vulnera, lori</l>
+                     <l n="242">Saeuus habena <orig>mulctat</orig> equini.</l>
+                     <l n="243">Atque oggannit non bona dicta,</l>
+                     <l n="244">Non humanitus ea doctus.</l>
+                  </sp>
+
+
+               </div>
+               <milestone unit="card" n="245" resp="p"/>
+               <div type="textpart"
+                    subtype="antistrophe"
+                    n="1"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <stage>Antistrophe <num>XII</num>.</stage>
+                     <l n="245">Iam tempus obnubere est ca-</l>
+                     <l n="246">-put, timide et propero</l>
+                     <l n="247">Fugam parare furto.</l>
+                     <l n="248">Curriculumque citi</l>
+                     <l n="249">Leue remigii in-</l>
+                     <l n="250">-scendere, nec parcere naui.</l>
+                     <l n="251">Tantas minas, totque volutant</l>
+                     <l n="252">Proceres Atridae</l>
+                     <l n="253">Duces, <orig>Saxipetas</orig> nam</l>
+                     <l n="254">Populi vereor</l>
+                     <l n="255">Manus, neu cum eo in malis</l>
+                     <l n="256">Hic iacente condoleam.</l>
+                  </sp>
+               </div>
+               <milestone unit="card" n="257" resp="p"/>
+
+               <div type="textpart"
+                    subtype="anapests"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Tecmessa.</speaker>
+                     <l n="257">Minime vero. nanque silescit</l>
+                     <l n="258">Vt, non vehemens qui venit, Auster.</l>
+                     <l n="259">Quin noua compos vulnera sentit.</l>
+                     <l n="260">Nam sua sibi cum quis mala spectat,</l>
+                     <l n="261">Et socius in eis nemo accedit,</l>
+                     <pb n="12" type="page"/>
+                     <l n="262">Ea magni est caussa doloris.</l>
+                  </sp>
+               </div>
+            </div>
+
+            <milestone unit="card" n="263" resp="p"/>
+            <div type="textpart"
+                 subtype="episode"
+                 part="N"
+                 org="uniform"
+                 sample="complete">
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="263">Hominem beatum si malo defungitur.</l>
+                  <l n="264">Absente morbo nam remittitur metus.</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="265">Harum placeret vtra conditio magis:</l>
+                  <l n="266">Cum per te amicis est male, esse tibi bene,</l>
+                  <l n="267">Aut cum iis doloris paria munia exequi?</l>
+               </sp>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="268">Quod duplicatur, maius est, mulier, malum.</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="269">Morbo caremus, et laboramus tamen.</l>
+               </sp>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="270">Quid dicis? haec me dictio incertat magis.</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="271">Vir ille morbo cum teneretur graui,</l>
+                  <l n="272"><orig>Gestibat</orig> ipse, qua premebatur, lue.</l>
+                  <l n="273">Angebat et nos mentis impos compotes<corr>.</corr></l>
+                  <l n="274">Postquam resedit, ac recepit se a malo:</l>
+                  <l n="275">Et maior illum mentis exercet dolor.</l>
+                  <l n="276">Et non minus nos nunc dolemus quam prius.</l>
+                  <l n="277">Non ergo simpla haec, dupla bis tanto mala?</l>
+               </sp>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="278">Verum est, fatemur<corr>:</corr> ac veremur, ne Deum</l>
+                  <l n="279">Incessat ira hunc: nam leuatur non magis,</l>
+                  <l n="280">Defunctus illa peste, quam aegrotans prius.</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="281">Ergo disertim commonendus es mihi.</l>
+               </sp>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="282">Enim vnde coepit gliscere haec moles mali,</l>
+                  <l n="283">Nos condolentes, et metus socios doce.</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="284">Ergo vt doloris socius, omnem rem tene.</l>
+                  <l n="285">Nam nocte prima nondum adhuc micantibus</l>
+                  <l n="286">Astrorum ocellis, ille vanos <orig>ancipe</orig></l>
+                  <l n="287">Instructus hasta tentat exitus ruens.</l>
+                  <l n="288">Ego increpo hominem. nam quid, inquam, cogitas</l>
+                  <l n="289">Aiax? quod <orig>isthuc</orig> itiner incertum paras</l>
+                  <l n="290">Nullo euocatus nuntio, aut tuba excitus,</l>
+                  <l n="291">Cum placidus omnes mulcet in castris sopor?</l>
+                  <l n="292">Breui ille dicto insequitur, at vulgario:</l>
+                  <l n="293">Mulier, mulierum <orig>ornamen</orig> est silentium.</l>
+
+                  <pb n="13" type="page"/>
+
+                  <l n="294"><orig>Perculsit</orig> animum: comprimo me: ille exiit.</l>
+                  <l n="295">Verum quid interuenit interibi haud scio.</l>
+                  <l n="296">Post, <orig>curuifrontes</orig> intrat armentas agens,</l>
+                  <l n="297">Mutasque pecudes, atque custodes canes.</l>
+                  <l n="298">Hinc capite truncat; inde resupinat, necat,</l>
+                  <l n="299">Iugulatque quaedam. his compeditis verbera,</l>
+                  <l n="300">Tanquam viri sint, non greges, usque oggerit.</l>
+                  <l n="301">Tunc nescio quod exiens spectrum appetens</l>
+                  <l n="302">Orationem duriter dictis dedit</l>
+                  <l n="303">In Vlyssem, Atridas perperam et ioculariter,</l>
+                  <l n="304">Indigna eorum facta sese ultum probe.</l>
+                  <l n="305">Ad nota rursum tecta regreditur gradum,</l>
+                  <l n="306">Tandemque mentis in potestatem redit.</l>
+                  <l n="307">Vt nouit omnem errore completam domum,</l>
+                  <l n="308">Frontem ferit, quiritat, in <orig>commiscuam</orig></l>
+                  <l n="309">Iacentium se proicit stragem gregum,</l>
+                  <l n="310">Manu prehensam identidem scindens comam:</l>
+                  <l n="311">Diuque muto constitit silentio.</l>
+                  <l n="312">Exinde grauia comminatus est mihi,</l>
+                  <l n="313">Ne edisseratur omne, quicquid est mali.</l>
+                  <l n="314">Ac esset in quo, sciscitabatur, statu:</l>
+                  <l n="315">His territata, quoque gesta sit modo,</l>
+                  <l n="316">Et quo sciebam rite rem pando ordine.</l>
+                  <l n="317">Tunc ipse questus rumpere eiulabiles,</l>
+                  <l n="318">Huic prius inausos, atque inauditos mihi:</l>
+                  <l n="319">Expetere tales nanque censebat sonos,</l>
+                  <l n="320"><orig>Ignauitati</orig> mentis, atque imbelliae.</l>
+                  <l n="321">Et voce parcens, atque lamentis prius,</l>
+                  <l n="322">Gemitus premebat, taurus vt mugit ferox.</l>
+                  <l n="323">Nunc hoc iniquo constitutus in statu,</l>
+                  <l n="324">In strage pecorum, Cereris et Bacchi carens,</l>
+                  <l n="325">Ferroque caesis gregibus incubat sedens:</l>
+                  <pb n="14" type="page"/>
+                  <l n="326">Ac nescio quod facinus <orig>occoeptat</orig> graue.</l>
+                  <l n="327">Tales querelis miscet eiulitans sonos.</l>
+                  <l n="328">At vos, amici, nanque ea me gratia</l>
+                  <l n="329">Huc contuli, ite, ferte opem, tutamini.</l>
+                  <l n="330">Faciles amicis sunt amici <orig>eimodi</orig>,</l>
+               </sp>
+               <milestone unit="card" n="331" resp="p"/>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="331">Indigna vero mihi, <orig>Teleutantis</orig> genus,</l>
+                  <l n="332">Proloqueris, hominem expectorarier malis.</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="333">Hei hei</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="334">Quin nunc magis videtur. an sentiscitis</l>
+                  <l n="335">Quas fundit Aiax ore voces flebili?</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="336">Hei hei.</l>
+               </sp>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="337">Mirum ni homo aut aegrotat, aut offenditur,</l>
+                  <l n="338">Morbi prioris paenitudine anxius.</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="339">Hei puer, hei puer.</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="340">Heu misera quid agam? te, puto, Eurysaces vocat.</l>
+                  <l n="341">Nam quid agis Aiax? heu vbi es, fili? occidi.</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="342">Teucrum voco. vbinam Teucer? <orig>assiduon'</orig> volet</l>
+                  <l n="343">Ductare praedas? ast ego intereo miser.</l>
+               </sp>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="344">Homo est apud se, vt sentio. aperite ocius:</l>
+                  <l n="345">Reuerebitur fortassis aspecti mei.</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="346">Aperimus, ecce. Caeterum licet tibi</l>
+                  <l n="347">Hominis tueri gesta, et eiusdem statum.</l>
+
+               </sp>
+            </div>
+
+
+            <milestone unit="card" n="348" resp="p"/>
+            <div type="textpart"
+                 subtype="choral"
+                 part="N"
+                 org="uniform"
+                 sample="complete">
+               <div type="textpart"
+                    subtype="strophe"
+                    n="1"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Aiax.</speaker>
+                     <stage>Stropha <num>VI</num>.</stage>
+                     <l n="348">Sodales maris remiges,</l>
+                     <l n="349">Amici vnici omnium, et</l>
+                     <l n="350">Aequitate stantes pia:</l>
+                     <l n="351">Videte me esse, qualis est</l>
+                     <l n="352">Vbi recens ab aestibus</l>
+                     <l n="353">Fluctus adhuc mouetur.</l>
+                  </sp>
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <l n="354">Vah quam euidenter vera testatus modo es,</l>
+                     <l n="355">Quod comprobatur satis inornato hoc statu.</l>
+                  </sp>
+                  <pb n="15" type="page"/>
+
+               </div>
+               <milestone unit="card" n="356" resp="p"/>
+               <div type="textpart"
+                    subtype="antistrophe"
+                    n="1"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+
+                  <sp>
+                     <speaker>Aiax.</speaker>
+                     <stage>Antistropha <num>VI</num>.</stage>
+                     <l n="356">Amici, marinum genus,</l>
+                     <l n="357">Rei nauticae sciens,</l>
+                     <l n="358">Bene inhibens ratis palmulas:</l>
+                     <l n="359">Modo vnici, modo vnici</l>
+                     <l n="360">Super mi estis <orig>adiuuae</orig>, oc-</l>
+                     <l n="361">-cidite: ferte opem mi.</l>
+                  </sp>
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <l n="362">Bona verba: ne malum resarciens malo,</l>
+                     <l n="363">Maiora tristi damna iactura effice.</l>
+                  </sp>
+
+               </div>
+               <milestone unit="card" n="364" resp="p"/>
+               <div type="textpart"
+                    subtype="strophe"
+                    n="2"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Aiax.</speaker>
+                     <stage><num>II</num> Stropha <num>IIII</num>.</stage>
+                     <l n="364">Ego ille acer, ille fortis ferox</l>
+                     <l n="365">Duelli, atque <orig>praelii</orig> interritus,</l>
+                     <l n="366">Pecudum in imbecille volgus ruo.</l>
+                     <l n="367">Pudet cachinni: contumeliae pudet.</l>
+                  </sp>
+                  <sp>
+                     <speaker>Tecmessa.</speaker>
+                     <l n="368">Haec verba fari, domine, <orig>compendiface</orig>.</l>
+                  </sp>
+                  <sp>
+                     <speaker>Aiax.</speaker>
+                     <l n="369">Excede. cessas? i directe foras.</l>
+                     <l n="370">He heu he heu.</l>
+                  </sp>
+                  <sp>
+                     <speaker>Tecmessa.</speaker>
+                     <l n="371">Desiste, amabo per Deos. ad te redi.</l>
+
+                  </sp>
+                  <sp>
+                     <speaker>Aiax.</speaker>
+                     <stage><num>III</num> Stropha <num>V</num>.</stage>
+                     <l n="372">Heu me miserum: manu</l>
+                     <l n="373">Remisse me hos <orig>sacerrumos</orig>,</l>
+                     <pb n="302"/>
+                     <l n="374">Bobus vt in trionibus,</l>
+                     <l n="375">Et in capellis, auidum</l>
+                     <l n="376"><orig>Retingerem</orig> cruorem.</l>
+                  </sp>
+                  <milestone unit="card" n="377" resp="p"/>
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <l n="377">Nam quid dolere haec facta profuerit tibi?</l>
+                     <l n="378">Infecta facta non erunt tuam vicem.</l>
+                  </sp>
+               </div>
+               <milestone unit="card" n="379" resp="p"/>
+               <div type="textpart"
+                    subtype="antistrophe"
+                    n="2"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>
+                        <corr resp="NJ" instant="false">Aiax.</corr>
+                     </speaker>
+                     <stage><num>II</num> Antistropha <num>IIII</num>.</stage>
+                     <l n="379">Hei omnium auctor omnium</l>
+                     <l n="380">Malorum faber puer Laertae,</l>
+                     <l n="381">Leueque publicumque mendicimo-</l>
+                     <l n="382">-nium: vt triumphas: vt cachinnas, vt crepas.</l>
+
+                     <pb n="16" type="page"/>
+
+                  </sp>
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <l n="383">Rident volente flentque mortales Deo.</l>
+                  </sp>
+                  <sp>
+                     <speaker>Aiax.</speaker>
+                     <l n="384">Vtinam viderem illum obrutus licet malis.</l>
+                     <l n="385">Hei me, hei me.</l>
+                  </sp>
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <l n="386">Comperce verbis. quo in statu sis non vides.</l>
+                  </sp>
+
+
+                  <sp>
+                     <speaker>Aiax.</speaker>
+
+                     <stage><num>III.</num> Antistropha <num>V</num>.</stage>
+
+                     <l n="387">Meorum o atauum pater,</l>
+                     <l n="388">Quanam arte, Iuppiter, vafrum</l>
+                     <l n="389">Vndique circitorem ini-</l>
+                     <l n="390">-micum ultus, atque ambo duces</l>
+                     <l n="391">Malam oppetam ipse mortem?</l>
+                  </sp>
+                  <sp>
+                     <speaker>Tecmessa.</speaker>
+                     <l n="392">Si haec imprecari imprecator et mihi</l>
+                     <l n="393">Mortem: quid opus est vita mihi, te mortuo?</l>
+                  </sp>
+               </div>
+               <milestone unit="card" n="394" resp="p"/>
+               <div type="textpart"
+                    subtype="strophe"
+                    n="3"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Aiax.</speaker>
+                     <stage><num>IIII</num> Stropha <num>XVI</num>.</stage>
+                     <l n="394">Meum o mihi iubar tenebrae, et Orce,</l>
+                     <l n="395">Lux nitida, lucida:</l>
+                     <l n="396">Habete me vestri incolam,</l>
+                     <l n="397">Habete. nec Deorum enim,</l>
+                     <l n="398">Neque mortale hominum</l>
+                     <l n="399">Mihi genus videre</l>
+                     <l n="400">Fas, inutili cunctis.</l>
+                     <l n="401">Sed ferox Iouis gnata, perpete</l>
+                     <l n="402">Dea cruce me <orig>mulctat</orig>.</l>
+                     <l n="403">Quae fugae via?</l>
+                     <l n="404">Quem locum eligam?</l>
+                     <l n="405">Postquam, amici, et hoc, et hoc</l>
+                     <l n="406">Interit simul,</l>
+                     <l n="407">Vanamque capturam egimus.</l>
+                     <l n="408">Statimque volgus armis</l>
+                     <l n="409">Omne confodient me.</l>
+                  </sp>
+                  <milestone unit="card" n="410" resp="p"/>
+                  <sp>
+                     <speaker>Tecmessa.</speaker>
+                     <l n="410">Vah misera: tales maxumum voces virum</l>
+                     <l n="411">Efflare, quas nec ausus esset antehac?</l>
+                     <pb n="17" type="page"/>
+
+                  </sp>
+               </div>
+               <milestone unit="card" n="412" resp="p"/>
+               <div type="textpart"
+                    subtype="antistrophe"
+                    n="3"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Aiax.</speaker>
+                     <stage><num>IIII.</num> Antistropha <num>XVI</num>.</stage>
+                     <l n="412">Fluuii <orig>mariflui</orig>, et maritima antra,</l>
+                     <l n="413">Et <orig>littoreum</orig> hoc nemus,</l>
+                     <l n="414">Diu diu me plus satis</l>
+                     <l n="415">Tenetis ante Troiam.</l>
+                     <l n="416"><orig>Atenim</orig> haud lumine com-</l>
+                     <l n="417">-potem amplius licebit.</l>
+                     <l n="418">Credere hoc neget nemo.</l>
+                     <l n="419">O Scamander, qui proxumus fluis</l>
+                     <l n="420">Beneuolus Argiuis:</l>
+                     <l n="421">Non tueberis</l>
+                     <l n="422">Amplius virum hunc</l>
+                     <l n="423">(Dicere non verebor) ex-</l>
+                     <l n="424">-erciti, omnium,</l>
+                     <l n="425">Quos Troia vidit, optumum</l>
+                     <l n="426">Graecanici: at sine vllo</l>
+                     <l n="427">Nunc honore iacentem.</l>
+                  </sp>
+                  <milestone unit="card" n="428" resp="p"/>
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <l n="428">Nec comprimendi, nec remittendi tui</l>
+                     <l n="429"><orig>Vllum</orig> modum habeo: tanta te incumbunt mala.</l>
+                  </sp>
+               </div>
+            </div>
+
+            <milestone unit="card" n="430" resp="p"/>
+            <div type="textpart"
+                 subtype="episode"
+                 part="N"
+                 org="uniform"
+                 sample="complete">
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="430">Ai ai, quis unquam tot meum cognomine</l>
+                  <l n="431">Meis putasset concinere nomen malis?</l>
+                  <l n="432">Ai ai licet nunc proloqui bis, ter mihi.</l>
+                  <l n="433">Nam me malorum tanta <orig>circunstat</orig> cohors.</l>
+                  <l n="434">Cuius pater reuersus ab Troiae hoc solo</l>
+                  <l n="435">
+                     <gap resp="Scaliger" reason="ellipsis" instant="false"/>
+                  </l>
+                  <l n="436">Domum rediuit mactus omni adorea.</l>
+                  <l n="437">Ego autem eodem natus, ad eundem locum</l>
+                  <l n="438">Profectus, iisdem viribus non indigens,</l>
+                  <l n="439">Qui nec minora patre patraui manu,</l>
+                  <l n="440">Heu pereo ad istum inhonorus Argiuis modum;</l>
+                  <l n="441">Sed hoc scio haud obnoxie: si de suis</l>
+                  <l n="442"><orig>Viuens</orig> Achilles captus armis arbiter</l>
+                  <l n="443">Palmarium virtutis alicui addiceret,</l>
+
+                  <pb n="18" type="page"/>
+                  <l n="444">Nemo abstulisset illa tunc meam vicem.</l>
+                  <l n="445">Sed haec doloso <orig>addixe</orig> potuerunt viro</l>
+                  <l n="446">Graeci meam illi postputantes gloriam.</l>
+                  <l n="447">Quod ni mihi omnem euersa mens sapientiam</l>
+                  <l n="448">Expectorassent, et oculus, nunquam amplius</l>
+                  <l n="449">Iudicia in alium iudicassent talia.</l>
+                  <l n="450">Iam peruico animo, Ioue sata, implacabili,</l>
+                  <l n="451">Me, cum iam in illos verterem infestam manum,</l>
+                  <l n="452">Repressit obiecta impotente insania,</l>
+                  <l n="453">In gregibus istis vt cruentarem manum.</l>
+                  <l n="454">Verum cachinnis nunc mihi illudunt, vbi</l>
+                  <l n="455">Fugere me nolente. cum Deus nocet</l>
+                  <l n="456">Vel fortiorem euadere ignauo est facul.</l>
+                  <l n="457">Quid ergo faciam, quem disertim omnes Dei</l>
+                  <l n="458">Odere? quem odit omnis Achiuum exercitus?</l>
+                  <l n="459">Et omnis odit Troia, et omne <orig>isthuc</orig> solum?</l>
+                  <l n="460">An <orig>domitionem</orig> ergo his relictis portubus,</l>
+                  <l n="461">Solisque Atridis, trans et Aegeum parem?</l>
+                  <l n="462">Sed qua potis sim fronte Telamonem patrem</l>
+                  <l n="463">Contra obtueri? quomodo me inglorium,</l>
+                  <l n="464">Virtute cassum sustinebit cernere,</l>
+                  <l n="465">Quarum ipse rerum honoribus summis cluet?</l>
+                  <l n="466">Non sic abibit, non. quid ergo? an vir viro</l>
+                  <l n="467">Congressus ad Troum alta propugnacula</l>
+                  <l n="468">Clare oppetam aliquo facinore illustri edito?</l>
+                  <l n="469">Sed facerem Atridis rem bonam et gratissìmam.</l>
+                  <l n="470">Non sic abibit. aliqua tentanda est via,</l>
+                  <l n="471">Qua iam senectis obsito membris patri</l>
+                  <l n="472">Profitear, haud hoc patre me ignauum satum.</l>
+                  <l n="473">Nam turpe longum postulat se uiuere,</l>
+                  <l n="474">Cui nulla detur a malis <orig>interquies</orig>.</l>
+                  <l n="475">Nam quid habet in se <orig>volupe</orig> de die dies</l>
+                  <pb n="19" type="page"/>
+                  <l n="476">Hinc summouens vitam, inde mortem promouens?</l>
+                  <l n="477">Nihili quidem hominem fecerim quem spes alit,</l>
+                  <l n="478">Vitamque vanis <orig>speribus</orig> lactat suam.</l>
+                  <l n="479">Sed nempe pulchre uiuere, aut pulchre mori</l>
+                  <l n="480">Expetere honestis et viris verum est. tenes.</l>
+               </sp>
+               <milestone unit="card" n="481" resp="p"/>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="481">Aliena dicta haec te loqui nemo autumet</l>
+                  <l n="482">Nec dixit, Aiax, sensa sed mentis tua.</l>
+                  <l n="483">Te respice ergo: da locum sententiae,</l>
+                  <l n="484">Tuis amicis, atque missa haec sis face.</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="485">Nullum est, here Aiax, omnibus mortalibus</l>
+                  <l n="486">Necessitatis legibus maius malum.</l>
+                  <l n="487">Ego quidem sum creta libero patre,</l>
+                  <l n="488">Eoque dite. si quis alius est Phrygum.</l>
+                  <l n="489">Nunc seruitutis compotiuit me Deus,</l>
+                  <l n="490">Et tua domitrix dextra. postquam ergo in tuum</l>
+                  <l n="491">Cubile conueni, ex eo studeo tibi.</l>
+                  <l n="492">Quod obsecro te perque communem larem,</l>
+                  <l n="493">Sociumque lectum, in quem optume conuenimus,</l>
+                  <l n="494">Ne, dum me iniquis tradis in manum tuis,</l>
+                  <l n="495">Committe, vt iis infamiae in caussa fuam.</l>
+                  <l n="496">Si moreris, ac nos morte destituis tua,</l>
+                  <l n="497">Ilicet eodem raptam ab Argiuis die,</l>
+                  <l n="498">Tractamque, meque, paruolumque <orig>diriter</orig>,</l>
+                  <l n="499">Famularem ad unum degere aetatem autuma.</l>
+                  <l n="500">Oratione tum quis <orig>incillans</orig> malus</l>
+                  <l n="501">Dominus amara, aspicite coniugem, inquiet,</l>
+                  <l n="502">Aiacis, Argiuum omnium fortissumi,</l>
+                  <l n="503">Quae seruitute quale mutauit decus?</l>
+                  <l n="504">Haec dicet aliquis. me quidem incesset Deus.</l>
+                  <l n="505">Inhonesta vero haec et tibi et tuis erunt.</l>
+                  <l n="506">Sed reuereatur te patris, quem in exita</l>
+                  <l n="507">Aetate linquis: sed sit et quidam pudor</l>
+
+                  <pb n="20" type="page"/>
+
+                  <l n="508">Parentis annis obsitae, quae saepius</l>
+                  <l n="509">Redire te optat uiuum, et <orig>incolumen</orig> domum.</l>
+                  <l n="510">Miserere gnati paruoli: siquidem cibo</l>
+                  <l n="511">Cassus nouello te sine aetatem exiget</l>
+                  <l n="512">Vt orbus, at non carus. oh quantis malis,</l>
+                  <l n="513">Si moreris, illum, meque compotem facis.</l>
+                  <l n="514">Te praeter aliud praesidi nil reliquum</l>
+                  <l n="515">Video. tua nam patria deleta est manu,</l>
+                  <l n="516">Genitrixque: genitor occidit fato suo,</l>
+                  <l n="517">Et mortuales incolunt Orci domus.</l>
+                  <l n="518">Quam quaeso dulcem comparem patriam tibi?</l>
+                  <l n="519">Quam opulentitatem? namque ego in te tota sum.</l>
+                  <l n="520">Sit et mihi respectus aliquis. nam bonos</l>
+                  <l n="521">Memores prioris esse benefacti addecet:</l>
+                  <l n="522">Et gratia alia gratiam semper parit.</l>
+                  <l n="523">Si quem beneficii ceperint obliuia,</l>
+                  <l n="524">Non est quod ille fortis aut bonus fuat.</l>
+               </sp>
+               <milestone unit="card" n="525" resp="p"/>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="525">Vtinam, tui vt me miseret, Aiax, te quoque</l>
+                  <l n="526">Misereret: huius verba laudares, scio.</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="527">Atqui illa nobis affatim laudabitur,</l>
+                  <l n="528">Si strenue ausit nostra mandata exequi.</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="529">Parebo, mi Aiax: cuncta properabo exequi.</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="530">Arcesse puerum nunc mihi, ut videam, meum.</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="531">Atqui foras eduxeram, metuens ei.</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="532">Dum fluctuarem in his malis ego, aut vbi?</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="533">Ne scilicet periret occursu tuo.</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="534">Hoc defit unum nempe fortunae meae.</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="535">Ego vindicaui: quod quidem suffecerit.</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="536">Et laudo factum, et <orig>perspicaciam</orig> tuam.</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="537">Sed quid iuuare te queam hoc facto meo?</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="538">Vt alloqui possim, vtque conspicarier.</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="539">Famularis illum asseruat hic custodia.</l>
+
+                  <pb n="21" type="page"/>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="540">Sed quae mora eius distulit praesentiam?</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="541">Heus puer, <orig>adesdum</orig>: te pater vocat: veni.</l>
+                  <l n="542">Huc, sis, age illum quisquis ex famulis regis.</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="543">Venitne iussus, anne iussa negligit?</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="544">Producit illum famulus huc ex proxumo.</l>
+               </sp>
+               <milestone unit="card" n="545" resp="p"/>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="545">Age huc age illum: non enim externabitur</l>
+                  <l n="546">Stragis recentes hos aceruos intuens,</l>
+                  <l n="547">Si quidem ille vero patre me satus fuit.</l>
+                  <l n="548">Sed eum paternis institutis asperis</l>
+                  <l n="549">domitari oportet: atque mores exequi.</l>
+                  <l n="550">O gnate, fortuna esto dissimilis patri,</l>
+                  <l n="551">Ast alia similis omnia: ita malus haud fuas.</l>
+                  <l n="552">Quanquam unicum istud hoc bonum inuideo tibi,</l>
+                  <l n="553">Quod ista nondum percipis sensu mala:</l>
+                  <l n="554">Nil sapere quippe vita iucundissuma est.</l>
+                  <l n="554a" part="N">Nil sapere prorsus est malum carens malo.</l>
+                  <l n="555"><orig>Moerore</orig>, donec gaudium internoueris.</l>
+                  <l n="556">Quod assecutum, qualis ex quali patre</l>
+                  <l n="557">Satus es te oportet specimen inimicis dare.</l>
+                  <l n="558">At interim auris vescitor leuibus, alens</l>
+                  <l n="559">Mentem nouellam, <orig>volupe</orig> matris gaudium.</l>
+                  <l n="560">Nemo te Achiuum differens probris malis,</l>
+                  <l n="561">Torue increpabit, vel licet careas mei.</l>
+                  <l n="562">Talem relinquam ianitorem acerrumum,</l>
+                  <l n="563">Alimoniaeque praesidem Teucrum tibi:</l>
+                  <l n="564">Siquidem is redibit hostium insessor procul.</l>
+                  <l n="565">Ast o sodales armites, marina gens,</l>
+                  <l n="566">Mandata primum nunc suprema et vos mea</l>
+                  <l n="567">Accipite, et illi nuntiantes reddite:</l>
+                  <l n="568">Istum puellum ducat ad lares meos,</l>
+                  <l n="569"><orig>Eriboea</orig> vt illum videat, et Telamo pater,</l>
+                  <l n="570">Et eis senectae dulce lenimen fuat,</l>
+                  <pb n="22" type="page"/>
+                  <l n="571">Vel donec Orci tecta sint nacti inferi.</l>
+                  <l n="572">Vlli nec arma praemiatores mea</l>
+                  <l n="573">Ponunto Achiuis, nec meum magnum malum.</l>
+                  <l n="574">At ipse vero Eurysace, tu cognominem,</l>
+                  <l n="575">Et <orig>crebriloris</orig> pensilem amentis <orig>quatens</orig></l>
+                  <l n="576">Apprende clypeum hunc praegrauem, et septemplicem.</l>
+                  <l n="577">Sed arma mecum <orig>concremantor</orig> caetera.</l>
+                  <l n="578">Heus tu properiter manibus hunc puerum cape,</l>
+                  <l n="579">Et ianuam obde, nullaque hic palam iace</l>
+                  <l n="580">Lamenta. valde est fletuum mulier lubens.</l>
+                  <l n="581">Operi forem, inquam. haud bene medens se postulat</l>
+                  <l n="582">Carmen secando vulneri <orig>incantassere</orig>.</l>
+               </sp>
+               <milestone unit="card" n="583" resp="p"/>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="583">Properantiam istam inaudiens metui male.</l>
+                  <l n="584">Nec me asperata lingua delectat tua.</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="585">Quod istud, Aiax, mente moliris malum?</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="586">Ne me <orig>rogassis</orig>. pulchra res modestia est.</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="587">Quam pendeo animi. Sed per ego te liberos,</l>
+                  <l n="588">Et per Deos obtestor, haud nos <orig>produis</orig>.</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="589">Vah enicas me, mulier: an nescis, Deis</l>
+                  <l n="590">Debere nullum iam me honorem obnoxium?</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="591" part="N">Bene ominare.</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="591a" part="N">Affare quos persuadeas.</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="592" part="N">Non credis autem?</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="592a" part="N">Iam nimis loqueris diu.</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="593" part="N">Nam timor adegit.</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="593a" part="N">Intus hanc includite.</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="594" part="N">Reprime te, amabo.</l>
+               </sp>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="594a" part="N">Stulta vero es foemina,</l>
+                  <l n="595">Si nunc mouere cogitas animum meum.</l>
+
+
+               </sp>
+            </div>
+
+            <milestone unit="card" n="596" resp="p"/>
+
+            <div type="textpart"
+                 subtype="choral"
+                 part="N"
+                 org="uniform"
+                 sample="complete">
+               <div type="textpart"
+                    subtype="strophe"
+                    n="1"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <stage>Stropha <num>VIII</num>.</stage>
+                     <l n="596">Illustris Salamis, beata</l>
+                     <l n="597">Tu nunc habitaris, et felix</l>
+                     <l n="598">Cunctis, celebrisque cunctis.</l>
+                     <l n="599">Ego autem, ego, imma-</l>
+                     <l n="600">-ne tempus abiit, miser</l>
+                     <pb n="23" type="page"/>
+                     <l n="601">Ex quo hic Idaeis</l>
+                     <l n="602">In pascuis, inque vbere</l>
+                     <l n="603">Nutrice gregum perenne herba,</l>
+                     <l n="604">Morarum impatiens,</l>
+                     <l n="605">Malam spem refouens,</l>
+                     <l n="606">Siquidem erit, vt agam hic</l>
+                     <l n="607">Procul animam</l>
+                     <l n="608">Inhonorus, exspes.</l>
+                  </sp>
+               </div>
+               <milestone unit="card" n="609" resp="p"/>
+
+               <div type="textpart"
+                    subtype="antistrophe"
+                    n="1"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <stage>Antistropha <num>XIII</num>.</stage>
+                     <l n="609">Quin et perditus, aeger Aiax</l>
+                     <l n="610">Mi cura secunda inhaeret, proh</l>
+                     <l n="611">Diuino agitatus aestu,</l>
+                     <l n="612">Profectus ex te</l>
+                     <l n="613">Antehac, prius inclytis</l>
+                     <l n="614">Praepollens armis:</l>
+                     <l n="615">Nunc auius mentis suae</l>
+                     <l n="616">Suis dolor extitit magnus.</l>
+                     <l n="617">Priora <orig>omnidomi</orig></l>
+                     <l n="618">Viri gesta manu</l>
+                     <l n="619">Memoriter animo</l>
+                     <l n="620">Profuga malis</l>
+                     <l n="621">Cecidere Atridis.</l>
+                  </sp>
+               </div>
+
+               <milestone unit="card" n="622" resp="p"/>
+
+               <div type="textpart"
+                    subtype="strophe"
+                    n="2"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <stage><num>II.</num> Stropha <num>XIIII</num>.</stage>
+                     <l n="622">Sed cum vetustatis</l>
+                     <l n="623">Obsita tempore,</l>
+                     <l n="624">Canis et annis</l>
+                     <l n="625"><orig>Audibit</orig> anus parens hunc</l>
+                     <l n="626"><orig>Rabere</orig> mente captum</l>
+                     <l n="627">Lusciniae ilicet</l>
+                     <l n="628">Lamentabile</l>
+                     <l n="629">Carmen volitantis</l>
+                     <l n="630">Non illa occinet:</l>
+                     <pb n="24" type="page"/>
+                     <l n="631">Ast luctificum integrabit</l>
+                     <l n="632">Lessum. pectora palmis</l>
+                     <l n="633">Atris tunsa sonabunt:</l>
+                     <l n="634">Incanamque manus</l>
+                     <l n="634a" part="N">Comam lacerabunt.</l>
+                  </sp>
+               </div>
+               <milestone unit="card" n="635" resp="p"/>
+
+               <div type="textpart"
+                    subtype="antistrophe"
+                    n="2"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <stage><num>II.</num> Antistropha <num>XIIII</num>.</stage>
+                     <l n="635">Praestaret extinctum</l>
+                     <l n="636">Hunc, quam efferarier.</l>
+                     <l n="637">Vbi paterno an-</l>
+                     <l n="638">-tistans celebres Achiuos</l>
+                     <l n="639">Genere, et inclyto ortu,</l>
+                     <l n="640">Cognita non tenet</l>
+                     <l n="641">Se intra septa ani-</l>
+                     <l n="642">-mi, ast exulat extra.</l>
+                     <l n="643">Infelix pater,</l>
+                     <l n="643a" part="N">Heu qualia et audies tu</l>
+                     <l n="644">Infortunia nati:</l>
+                     <l n="644a" part="N">Quae antehac Aeacidarum</l>
+                     <l n="645">Aetas non tulerat</l>
+                     <l n="645a" part="N">Quidem vlla, nisi ista.</l>
+                  </sp>
+               </div>
+            </div>
+            <milestone unit="card" n="646" resp="p"/>
+            <div type="textpart"
+                 subtype="episode"
+                 part="N"
+                 org="uniform"
+                 sample="complete">
+               <head>ACTVS TERTIVS.</head>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="646">Omnia reflexis saeculorum anfractibus</l>
+                  <l n="647">Occulta tempus aperit, et aperta occulit.</l>
+                  <l n="648">Nihil est supra spem. tempore etiam contumax</l>
+                  <l n="649">Deprenditur mens, iusque iurandum Iouis.</l>
+                  <l n="650">Ego peruicaci mente, inexorabili,</l>
+                  <l n="651">Qualis rigescit dura ferri acies aqua,</l>
+                  <l n="652">Demulctus huius ore sum, inimicis eam</l>
+                  <l n="653">Linquere misertum est viduam, et orbum filium.</l>
+                  <l n="654">Sed ad lauacra et prata <orig>littoralia</orig></l>
+                  <l n="655">Eo, vt expiatus februis lustralibus</l>
+                  <l n="656">Iram ferocem deprecer grauis Deae.</l>
+
+                  <pb n="25" type="page"/>
+                  <l n="657">Mox aliquem adibo inhospitum et tescum locum,</l>
+                  <l n="658">Telumque ibi inimicissumum hoc, ensem meum,</l>
+                  <l n="659">Vt videat illud nemo, defossum obruam,</l>
+                  <l n="660">Sed creditum Orcus, noxque <orig>seruassint</orig> sibi.</l>
+                  <l n="661">Nam denique ex quo muneratum tempore</l>
+                  <l n="662">Ego illud hostica Hectoris cepi manu:</l>
+                  <l n="663">Exinde adeptus nil sum ab Argiuis boni.</l>
+                  <l n="664">Scitum est in ore hoc omnium dictum vetus:</l>
+                  <l n="665">Infausta munera hostium, nec-munera.</l>
+                  <l n="666">Discamus ergo in caeterum Deis locum</l>
+                  <l n="667">Cedere, et honorem debitum Atridis dare.</l>
+                  <l n="668">Nam principes sunt: obsequendum est: quippini?</l>
+                  <l n="669">Et grauia quae sunt, quaeque sunt immania</l>
+                  <l n="670">Cedunt honori. cedit et vis ninguidae</l>
+                  <l n="671">Hiemis, vbi aestas macta frugibus venit.</l>
+                  <l n="672">Cedunt et ipsae noctis obscurae vices</l>
+                  <l n="673">Luci albicanti lumen almum accendere.</l>
+                  <l n="674">Et maria tumidis intonata flatibus</l>
+                  <l n="675">Posuere fluctus. victor omnium sopor</l>
+                  <l n="676">Deuincta laxat membra, nec semper tenet.</l>
+                  <l n="677">Et ego modesta facta dubitem persequi?</l>
+                  <l n="678">Quare, vt reapse nuper expertus fui,</l>
+                  <l n="679">Hac fine semper, censeo, inimicum oderis,</l>
+                  <l n="680">Tanquam idem amicus sit futurus. indidem</l>
+                  <l n="681">In tantum amico munifex morem geram,</l>
+                  <l n="682">Tanquam nec idem sit futurus. plurimi</l>
+                  <l n="683">Appellere ipsum portum amicitiae timent.</l>
+                  <l n="684">Sed belle habebunt ista. tu vero interim</l>
+                  <l n="685">Intus precare perpetim, mulier, Deos,</l>
+                  <l n="686">Succedere illa, quae sedent animo, omnia.</l>
+                  <l n="687">Et vos sodales paria comprecamini.</l>
+                  <l n="688">Mandata verbis haec meis Teucro date:</l>
+                  <pb n="26" type="page"/>
+                  <l n="689">Vti nos <orig>amassit</orig>, vt velit vobis bene.</l>
+                  <l n="690">Proficiscor illuc, quo profecto opus mihi est.</l>
+                  <l n="691">Vos iussa perpetrate. forsit de mea</l>
+                  <l n="692">Salute inaudietis, etsi perieram.</l>
+               </sp>
+
+            </div>
+            <milestone unit="card" n="693" resp="p"/>
+            <div type="textpart"
+                 subtype="choral"
+                 part="N"
+                 org="uniform"
+                 sample="complete">
+               <div type="textpart"
+                    subtype="strophe"
+                    n="1"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <stage>Stropha <num>XIIII</num>.</stage>
+                     <l n="693">Amore tremisco: vitulo gaudio vagus.</l>
+                     <l n="694">Io, Io, o Fau-</l>
+                     <l n="695">-ne, o peruage Faune:</l>
+                     <l n="696">Cylleniae speculae iuga</l>
+                     <l n="697">Age, o, ninguida linque scrupea. adsis</l>
+                     <l n="698">Deum <orig>salisubsule</orig>: atque gestus</l>
+                     <l n="699"><orig>Gnossiacos</orig> age</l>
+                     <l n="700">Mecum, indocilesque pede</l>
+                     <l n="701">Quate hic choreas.</l>
+                     <l n="702">Nunc mihi saltitare curae est.</l>
+                     <l n="703">Icarium salum superans, trans-</l>
+                     <l n="704">-marine Diue Apollo,</l>
+                     <l n="705">Apertus et apparens</l>
+                     <l n="706">Adesto placabilis, atque felix.</l>
+                  </sp>
+               </div>
+               <milestone unit="card" n="707" resp="p"/>
+
+               <div type="textpart"
+                    subtype="antistrophe"
+                    n="1"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <stage>Antistropha <num>XIIII</num>.</stage>
+                     <l n="707">Remotus enim acer ab oculis mali labor,</l>
+                     <l n="708">Io, io, nunc o nunc</l>
+                     <l n="709">Accedere, Iuppi-</l>
+                     <l n="710">-ter, fausta, candida lux siuit</l>
+                     <l n="711">Citas fluctiuagas rates, quia Aiax</l>
+                     <l n="712">Furore leuatus, et Deorum</l>
+                     <l n="713">Jussa operatus est,</l>
+                     <l n="714">Et nunc pietate colens</l>
+                     <l n="715">Pia benigna.</l>
+                     <l n="716">Omnia tempus acre delet.</l>
+                     <l n="717">Nec fieri omne posse, negandum est.</l>
+                     <l n="717a" part="N">Vbi ipse restitutus</l>
+                     <pb n="27" type="page"/>
+                     <l n="718">Aiax modo Atridis in-</l>
+                     <l n="718a" part="N">-opinus est ex grauiore lite.</l>
+                  </sp>
+               </div>
+            </div>
+
+            <milestone unit="card" n="719" resp="p"/>
+
+
+            <div type="textpart"
+                 subtype="episode"
+                 part="N"
+                 org="uniform"
+                 sample="complete">
+               <sp>
+                  <speaker>Nuntius.</speaker>
+                  <l n="719">Hoc primum amici, vos ego edoctos volo:</l>
+                  <l n="720">Recens ab altis Mysiae Teucer iugis</l>
+                  <l n="721">Adest. is autem media castra permeans</l>
+                  <l n="722">Petitur acerbis omnium Argiuum probris.</l>
+                  <l n="723">Ventantem enim illum <orig>sciscitabundi</orig> procul</l>
+                  <l n="724"><orig>Circunsteterunt</orig>: hinc et hinc conuitiis</l>
+                  <l n="725">Lacerant, lacessunt. non fuit qui non eum</l>
+                  <l n="726">Vecordis, insessoris etiam exerciti</l>
+                  <l n="727">Fratrem vocaret: nil vetare quominus</l>
+                  <l n="728">Saxorum aceruis obrutus mortem oppetat.</l>
+                  <l n="729">Eoque res rediret vt gladios suis</l>
+                  <l n="730">Vagina eburna liberarent dexteris.</l>
+                  <l n="731">Sed verbo amico reprimit gliscens malum</l>
+                  <l n="732">Senum senex aetate prouectissumus.</l>
+                  <l n="733">Nunc vero vbi Aiax est, vt illi haec indicem?</l>
+                  <l n="734">Dominis negotium omne pandere expedit.</l>
+               </sp>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="735">Non est is intus, verum abiuit iam modo,</l>
+                  <l n="736">Consilia nectens moribus nouis noua.</l>
+               </sp>
+               <sp>
+                  <speaker>Nuntius.</speaker>
+                  <l n="737">Heu, heu.</l>
+                  <l n="738">Qui misit istam me viam, aut me eam viam</l>
+                  <l n="739">Tarde ille misit, aut ego tardus fui.</l>
+               </sp>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="740">Quid est quod hac in re exequendum omiseris?</l>
+               </sp>
+               <sp>
+                  <speaker>Nuntius.</speaker>
+                  <l n="741">Teucer vetabat, ne domo Aiax antea</l>
+                  <l n="742">Prius, quam adesset ipse, prodiret foras.</l>
+               </sp>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="743"><orig>Sequutus</orig> est meliora: nempe maxumis</l>
+                  <l n="744">Pacem Deorum precibus exposcens abest.</l>
+               </sp>
+               <sp>
+                  <speaker>Nuntius.</speaker>
+                  <l n="745">Haec verba plane plena sunt dementiae,</l>
+                  <l n="746">Et stulta, siquid augurans Calchas sapit.</l>
+               </sp>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="747">Quibus ista tandem fretus indiciis ais?</l>
+               </sp>
+               <sp>
+                  <speaker>Nuntius.</speaker>
+                  <l n="748">Ego superstes affui, atque interfui.</l>
+                  <pb n="28" type="page"/>
+
+                  <l n="749">Nanque e corona, et regiis comitiis</l>
+                  <l n="750">Calchas resurgit: seorsum Atridas deserit.</l>
+                  <l n="751">Teucrum prehendit: copulatur dexteras.</l>
+                  <l n="752">Infit: recenset: mandat omnibus modis,</l>
+                  <l n="753">Aiacem vt hodie sedulo coercitum</l>
+                  <l n="754">Intus teneret nec foras emitteret:</l>
+                  <l n="755">Si vellet illum sospitem, ac superstitem.</l>
+                  <l n="756">Nanque hanc, neque vltra (sic enim autumat) diem</l>
+                  <l n="757">Illum Mineruae dirus exercet furor.</l>
+                  <l n="758">Nam molem inanem corporum, atque inutilem</l>
+                  <l n="759">Missa ruina caelitus procumbere</l>
+                  <l n="760">Perhibebat augur. si quis humanum nihil</l>
+                  <l n="761">Quanuis creatus corpore humano, sapit.</l>
+                  <l n="762">Sed ille et olim primitus domo exiens</l>
+                  <l n="763">Demens, monente patre bene, deprensus est.</l>
+                  <l n="764">Nam sic monebat: Gnate, bellica clue</l>
+                  <l n="765">Virtute victor: vince cum Deo tamen.</l>
+                  <l n="766">Contra ille torue affatur ac superbiter:</l>
+                  <l n="767">O genitor, etiam si quis est nulli rei,</l>
+                  <l n="768">Virtute diuum vinces: ast ego hanc facul,</l>
+                  <l n="769">Etiam sine illis indipiscar gloriam.</l>
+                  <l n="770">Adeo superbe est <orig>eloquutus</orig>. Denique</l>
+                  <l n="771">Diuae Mineruae, dum illum in <orig>offertissumos</orig></l>
+                  <l n="772">Hortatur hostes vertere infestam manum,</l>
+                  <l n="773">Dictum <orig>obloquutus</orig> perperum est et impotens:</l>
+                  <l n="774">O Diua, Graecos caeteros praesens ope</l>
+                  <l n="775">Tutare: nam in nos nulla vis pugnae ingruet.</l>
+                  <l n="776">His ille verbis sibi Deae implacabiles</l>
+                  <l n="777">Asciuit iras, homine spirans altius.</l>
+                  <l n="778">Sed si diem istum vescitur vita: ilicet</l>
+                  <l n="779">Eius salutem cum Deo confecimus.</l>
+                  <l n="780">Haec augur. at me ex sessimonio statim</l>
+                  <pb n="29" type="page"/>
+                  <l n="781">Tibi ista misit perferentem sedulo</l>
+                  <l n="782">Mandata Teucer. Si nec adsum tempori,</l>
+                  <l n="783">Non superat ille, siquid hic Calchas sapit.</l>
+               </sp>
+               <milestone unit="card" n="784" resp="p"/>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="784">Tecmessa, misera mulier, infelix genus,</l>
+                  <l n="785">Accede, et audi, qualia hic verba obstrepit:</l>
+                  <l n="786">Quae gaudium omne expectorant animo mihi.</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="787">Quid me misellam vix quiescentem a malis</l>
+                  <l n="788">Meo recenter excitatis de statu?</l>
+               </sp>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="789">Tibi ergo dicat iste: nam me de tuo</l>
+                  <l n="790">Aiace quae narrauit, exanimant metu.</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="791">Hau mi homo, quid ais? an penitus ego occidi?</l>
+               </sp>
+               <sp>
+                  <speaker>Nuntius.</speaker>
+                  <l n="792">De te nihil promitto: de Aiace attamen,</l>
+                  <l n="793">Si eliminauit ille, non sperem bene.</l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="794">Eliminavit is quidem, ut metuam: quid est?</l>
+               </sp>
+               <sp>
+                  <speaker>Nuntius.</speaker>
+                  <l n="795">Includi aperte iussit illum intra domus <milestone unit="verse" n="795"/>
+                  </l>
+                  <l n="796">Consepta Teucer, nec foras amittere. </l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="797">Ubi ipse Teucer? cur is haec adeo iubet?</l>
+               </sp>
+               <sp>
+                  <speaker>Nuntius.</speaker>
+                  <l n="798">Iam mox redibit ille. caeterum exitum</l>
+                  <l n="799">Hominis ad aliquod tendere exitium autumat. </l>
+                  <pb n="314" type="page"/>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="800">
+                     <milestone unit="verse" n="800"/> Perii. quis illi haec indicat mortalium?</l>
+               </sp>
+               <sp>
+                  <speaker>Nuntius.</speaker>
+                  <l n="801">Thestore creatus vate vates, hoc die,</l>
+                  <l n="802">Quo certa vel ei vita, vel mors expetit. </l>
+               </sp>
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="803">Heu casum, amici, praevenite praecipem.</l>
+                  <l n="804">Pars ite, Teucrum convocate huc <orig>ocyus</orig>. </l>
+                  <milestone unit="verse" n="805"/>
+                  <l n="805">Pars Occidentis, pars et Orientis plagam</l>
+                  <l n="806">Lustrate, quo se cunque proripuit male. </l>
+                  <l n="807">Iam sentio olim me a viro delinier. </l>
+                  <l n="808">Ingrata iam sunt, quae benigne fecimus. </l>
+                  <l n="809">Heu, gnate, quid agam? non enim morae locus. </l>
+                  <l n="810">
+                     <milestone unit="verse" n="810"/> Certum est et ire qua pote, et quantum
+                     pote.</l>
+                  <l n="811">Eamus, accingamur: haud cessato opus, </l>
+                  <l n="812">Servare volumus si virum certum mori. </l>
+                  <pb n="30" type="page"/>
+               </sp>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="813">Paratus ire nec quidem tantum ore sum,</l>
+                  <l n="814">Sed operis aderit, et pedum properantia. </l>
+               </sp>
+            </div>
+            <milestone unit="card" n="815" resp="p"/>
+            <div type="textpart"
+                 subtype="episode"
+                 part="N"
+                 org="uniform"
+                 sample="complete">
+               <head>Actus Quartus.</head>
+               <sp>
+                  <speaker>Aiax.</speaker>
+                  <l n="815">
+                     <milestone unit="verse" n="815"/> Stat culter illa parte, quae sit maxume</l>
+                  <l n="816">Acuta, si cui experirier vacat. </l>
+                  <l n="817">Munus quidem ille olim Hectoris virum omnium </l>
+                  <l n="818">Et omnium mihi hospitum invisissumi. </l>
+                  <l n="819">In Troade autem pactus est terra hostica: </l>
+                  <l n="820">
+                     <milestone unit="verse" n="820"/> Cui bene cruenta cote acumen redditum
+                     est:</l>
+                  <l n="821">Fixi bene illum, et apparavi sedulo.</l>
+                  <l n="822">Vel ut properiter non mihi invideat mori,<note anchored="true">Vt vel A</note>
+                  </l>
+                  <l n="823">Provisa nobis ista sunt in caeteris: </l>
+                  <l n="824">Tu primus, et fas, adiuva me, Iuppiter. </l>
+                  <l n="825">
+                     <milestone unit="verse" n="825"/> Fac <orig>impetrassim</orig> munus hoc a te breve.</l>
+                  <l n="826">Existat aliquis <orig>nuncius</orig>: quicquid mali est </l>
+                  <l n="827">Teucro eloquatur: moneat, ut me <orig>isthinc</orig> humo </l>
+                  <l n="828">Super cruento hoc ense prociduum efferat. </l>
+                  <l n="829">Ne deprehensus hic ab inimicis prius </l>
+                  <l n="830">
+                     <milestone unit="verse" n="830"/> Proiiciar, et praeda avibus et canibus
+                     fuam.</l>
+                  <l n="831">Haec, sancte, venerans te rogo: atque idem obsecro:</l>
+                  <l n="832">Deponat ut quiete me placidissuma,</l>
+                  <l n="833">Postquam ense primum hoc transadegerim latus, </l>
+                  <l n="834">Primo pedatu dextra Mercurii inferi.</l>
+                  <pb n="315" type="page"/>
+                  <l n="835">Deinde semper-virgines prece invoco, <milestone unit="verse" n="835"/>
+                  </l>
+                  <l n="836">Quae semper intuentur humanas vices, </l>
+                  <l n="837">Sanctas Dearum praepetes Furias: sciant, </l>
+                  <l n="838">Uti me Atridae principes adigant mori. </l>
+                  <l n="839">Eosque in exitium ultimum malos male </l>
+                  <l n="840">Rapiant. et, ut me mox tuebuntur mea <milestone unit="verse" n="840"/>
+                  </l>
+                  <l n="841">Caesum manu iacere, sic nepotibus </l>
+                  <l n="842">Poenas nefanda caede postumis luant. </l>
+                  <l n="843">Agite, ite celeres, ite Furiae vindices. </l>
+                  <pb n="31" type="page"/>
+                  <l n="844">Tentate volgus omne, ne compercite. </l>
+                  <l n="845">Sol, qui suprema templa curriculo citus <milestone unit="verse" n="845"/>
+                  </l>
+                  <l n="846">Lustras, paternae institeris ut terrae meae </l>
+                  <l n="847">Strigans, parumper inhibe habenas aureas </l>
+                  <l n="848">Utrisque miseris funus ac casus meos</l>
+                  <l n="849">Aetate cana nuncia parentibus. </l>
+                  <l n="850">Ubi fama miserae matris aures accidet, <milestone unit="verse" n="850"/>
+                  </l>
+                  <l n="851">Totam per urbem ululabit, eiulabitur. </l>
+                  <l n="852">Nec fructus operae est ista frustra conqueri. </l>
+                  <l n="853">Age, ordiendum est facinus actutum mihi. </l>
+                  <l n="854">O mors age, o mors age, veni, ac me visita. </l>
+                  <l n="855">Quanquam alloquendi tempus olim erit satis. <milestone unit="verse" n="855"/>
+                  </l>
+                  <l n="856">Te lucis almae candidissumum iubar:</l>
+                  <l n="857">Te, sol, et almae lucis aurigam alloquor </l>
+                  <l n="858"><orig>Posterrumum</orig>, inquam, ut postea nunquam amplius. </l>
+                  <l n="859">O lumen, o domesticae sacrum solum </l>
+                  <l n="860">Salaminis, o mei penates patrii: <milestone unit="verse" n="860"/>
+                  </l>
+                  <l n="861">Vos clarae Athenae, vosque gentiles mei, </l>
+                  <l n="862">Fontesque, fluvii vos valete : Troici</l>
+                  <l n="863">Campi valete, et vos mei nutricii.</l>
+                  <l n="864">Haec verba vobis edit Aiax ultima,</l>
+                  <l n="865">Reliqua apud Orcum fabor infernatibus. 865 </l>
+               </sp>
+               <milestone unit="card" n="866" resp="p"/>
+               <div type="textpart"
+                    subtype="kommos"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Semichorus.</speaker>
+
+                     <l n="866">Labor duplex gravis labor. </l>
+                     <l n="867">
+                        <gap reason="ellipsis" resp="Scaliger" instant="false"/>
+                     </l>
+                     <l n="868">Quem non adivi ego locum ? </l>
+                     <l n="869">Nec, qui docere possit, ullus est locus. </l>
+                     <l n="870">Tace, tace. fallor? an sonum audio? </l>
+                     <l n="871">
+                        <gap reason="ellipsis" resp="Scaliger" instant="false"/>
+                     </l>
+                  </sp>
+                  <sp>
+                     <speaker>Semichorus.</speaker>
+                     <l n="872">Vero. sodales classicos nos scilicet. </l>
+                     <pb n="316" type="page"/>
+                  </sp>
+                  <sp>
+                     <speaker>Semichorus.</speaker>
+                     <l n="873">Quid ergo? </l>
+                  </sp>
+                  <sp>
+                     <speaker>Semichorus.</speaker>
+                     <l n="874">Latus occidentis omne vestigavimus. </l>
+                  </sp>
+                  <sp>
+                     <speaker>Semichorus.</speaker>
+                     <l n="875">Habesne?</l>
+                  </sp>
+                  <sp>
+                     <speaker>Semichorus.</speaker>
+                     <l n="876">Multum laboris: nihil mihi ultra se obtulit. </l>
+                  </sp>
+                  <sp>
+                     <speaker>Semichorus.</speaker>
+                     <l n="877">Nec, uspiam ipsam solis Orientis plagam </l>
+                     <pb n="32" type="page"/>
+                     <l n="878">Existit ullus rite qui monstret mihi. </l>
+
+
+                  </sp>
+               </div>
+            </div>
+            <milestone unit="card" n="879" resp="p"/>
+
+            <div type="textpart"
+                 subtype="choral"
+                 part="N"
+                 org="uniform"
+                 sample="complete">
+               <div type="textpart"
+                    subtype="strophe"
+                    n="1"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <stage><num>1.</num> Stropha <num>XIII</num>.</stage>
+                     <l n="879">Quis ergo, quis mihi,</l>
+                     <l n="880">Quis hominum vigilibus </l>
+                     <l n="881">Maris speculis sedens, </l>
+                     <l n="882"><orig>Caelivagisve</orig> viis </l>
+                     <l n="883">Solens quae Dea, </l>
+                     <l n="884">Fluminibusve freten-</l>
+                     <l n="885">-sibus ferum virum inde </l>
+                     <l n="886">Sicubi vidit pa-</l>
+                     <l n="887">-lantem, ubi est, nuntiet.</l>
+                     <l n="888">Grave fuerit enim, si </l>
+                     <l n="889">Post tot labores vagos </l>
+                     <l n="890">Cursu non potui assequi. </l>
+                     <l n="891">Ast me hominem imbecillem, ubi est non cernere. </l>
+                  </sp>
+                  <sp>
+                     <speaker>Tecmessa.</speaker>
+                     <l n="892">Heu me, heu me.</l>
+                  </sp>
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <l n="893">Heu <orig>quoia</orig> vox haec proxume e nemore exiit?</l>
+                  </sp>
+                  <sp>
+                     <speaker>Tecmessa.</speaker>
+                     <l n="894">Heu me miseram.</l>
+                  </sp>
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <l n="895">Sponsam misellam bellica captam manu</l>
+                     <l n="896">Video Tecmessam paribus affinem malis. </l>
+                  </sp>
+                  <sp>
+                     <speaker>Tecmessa.</speaker>
+                     <l n="897">Perii, occidi; actum est: vita, amici, exacta sum.</l>
+                  </sp>
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <l n="898">Quid est novi?</l>
+                  </sp>
+                  <sp>
+                     <speaker>Tecmessa.</speaker>
+                     <l n="899">Aiax caede confectus nova,</l>
+                     <l n="900">Iacet cruentus ense furtivo incubans. </l>
+
+
+                  </sp>
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <stage><num>2.</num> Stropha <num>V</num>.</stage>
+                     <l n="901">De reditu actum est mi.</l>
+                     <l n="902">Interficis istum </l>
+                     <l n="903">Tuum sodalem, inquam, </l>
+                     <l n="904">Aiax, o miser, </l>
+                     <l n="905">O miser femina. </l>
+
+                  </sp>
+                  <sp>
+                     <speaker>Tecmessa.</speaker>
+                     <l n="906">Ut ipsa res est nata, nunc gemere addecet.</l>
+                     <pb n="33" type="page"/>
+                  </sp>
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <l n="907">Sed <orig>quoia</orig> ad hanc rem est usus infelix manu?</l>
+                  </sp>
+                  <sp>
+                     <speaker>Tecmessa.</speaker>
+                     <l n="908">Sua ipse dextra, ut res docet. quod et quidem</l>
+                     <pb n="317" type="page"/>
+                     <l n="909">Haerens humoque fixus ensis arguit. </l>
+
+
+                  </sp>
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <stage><num>3.</num> Stropha <num>VIII</num>.</stage>
+                     <l n="910">Heu miserum casum.</l>
+                     <l n="911a" part="N">Tene cruentasti </l>
+                     <l n="911">Amicorum carens? </l>
+                     <l n="912">Egone eo usque stipes: ego </l>
+                     <l n="913">Ita negligens fui huius? </l>
+                     <l n="913a" part="N">Hic, hic </l>
+                     <l n="914">Pervicus, atque sui </l>
+                     <l n="914a" part="N">Iacet ominis Aiax. </l>
+
+                  </sp>
+                  <milestone unit="card" n="915" resp="p"/>
+                  <sp>
+                     <speaker>Tecmessa.</speaker>
+                     <l n="915">Nefas videre. verum ego huius pallii <milestone unit="verse" n="915"/>
+                     </l>
+                     <l n="916">Totum obvolutum corpus <orig>amiectu</orig> obtegam. </l>
+                     <l n="917">Namque illum, amicus si quis est, contra <orig>obtui</orig> </l>
+                     <l n="918">Non queat anhelis follicantem naribus, </l>
+                     <l n="919">
+                        <gap reason="ellipsis" resp="Scaliger" instant="false"/>
+                     </l>
+                     <l n="920">Et ex cruento vulnere atrum sanguinem. </l>
+                     <l n="921">Heu misera, quid agam? quis te amicorum efferet? <milestone unit="verse" n="920"/>
+                     </l>
+                     <l n="922">Ubi Teucer? adesset, siquidem adesset, tempori, </l>
+                     <l n="923">Sui cadaver fratris ut componeret. </l>
+                     <l n="924">Qualis vir Aiax, qualiter miser iaces, </l>
+                     <l n="925">Miserandum et ipsis hostibus spectaculum!</l>
+
+
+                  </sp>
+               </div>
+               <milestone unit="card" n="926" resp="p"/>
+               <div type="textpart"
+                    subtype="antistrophe"
+                    n="1"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <stage><num>1.</num> Antistropha <num>XIII</num>.</stage>
+                     <l n="926">Labore ergo improbo</l>
+                     <l n="926a" part="N">Volueras, miseriis-</l>
+                     <l n="927">-que fungier, et quidem</l>
+                     <l n="927a" part="N">Functus es. usque adeo </l>
+                     <l n="928">Mihi talia </l>
+                     <l n="929">Perdius acri animo </l>
+                     <l n="930">Gemendo signa iam dabas </l>
+                     <l n="931">Hostifica, et pernox </l>
+                     <l n="932">Erga Atridas duces. </l>
+                     <l n="933">Ea fuit, ea labis </l>
+                     <l n="934">Princeps dies: quae dedit </l>
+                     <l n="935">Iudicium acre vir-</l>
+                     <l n="936">-tutis et ergo Achillis arma tradidit.</l>
+                  </sp>
+                  <sp>
+                     <speaker>Tecmessa.</speaker>
+                     <l n="937">Eheu!</l>
+                  </sp>
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <l n="938">Generosa cura penita transit viscera. <milestone unit="verse" n="938"/>
+                     </l>
+                  </sp>
+                  <sp>
+                     <speaker>Tecmessa.</speaker>
+                     <l n="939">Eheu!</l>
+                     <pb n="318" type="page"/>
+                  </sp>
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <l n="940">
+                        <milestone unit="verse" n="940"/> Nil mirum et iterum, mulier,
+                        eiularier,</l>
+                     <l n="941">Orbata tali quae modo careas viro. </l>
+                  </sp>
+                  <sp>
+                     <speaker>Tecmessa.</speaker>
+                     <l n="942">Opinio ad te, sensus ad me pertinet.</l>
+                  </sp>
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <l n="943">Fatemur.</l>
+                  </sp>
+                  <sp>
+                     <speaker>Tecmessa.</speaker>
+                     <l n="944">O gnate: quod nos servitutis nunc manet</l>
+                     <l n="945">
+                        <milestone unit="verse" n="945"/> Iugum? quibusve premimur insessoribus?</l>
+
+
+                  </sp>
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <stage><num>2.</num> Antistropha <num>V</num>.</stage>
+                     <l n="946">Ah geminum sensi</l>
+                     <l n="947">Te facta profari </l>
+                     <l n="948">Nefanda imperato-</l>
+                     <l n="948a" part="N">-rum huic magno malo.</l>
+                     <l n="949">Sed repellat Deus. </l>
+                  </sp>
+                  <sp>
+                     <speaker>Tecmessa.</speaker>
+                     <milestone unit="verse" n="950"/>
+                     <l n="950">Non accidissent haec Deis nolentibus.</l>
+                  </sp>
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <l n="951">Sed mole nimium nos gravi premunt mali.</l>
+                  </sp>
+                  <sp>
+                     <speaker>Tecmessa.</speaker>
+                     <l n="952">Tales ruinas creta supremo Iove</l>
+                     <l n="953">Minerva Ulyssis saeva molitur vicem. </l>
+
+
+                  </sp>
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <stage><num>3.</num> Antistropha <num>VIII</num>.</stage>
+                     <l n="954">Quam tacite secum</l>
+                     <l n="955">Mente dolosa vir </l>
+                     <l n="956">Renidens, obstrepens </l>
+                     <l n="957">Cachinnat, et super domini </l>
+                     <l n="958">Rabie, et furore ridet. </l>
+                     <l n="956a" part="N">Heu, heu! </l>
+                     <l n="959">Tum autem et ubi audierint haec </l>
+                     <l n="960">
+                        <milestone unit="verse" n="960"/> Duces duo Atridae.</l>
+
+                  </sp>
+               </div>
+            </div>
+
+            <milestone unit="card" n="961" resp="p"/>
+
+
+            <div type="textpart"
+                 subtype="episode"
+                 part="N"
+                 org="uniform"
+                 sample="complete">
+               <sp>
+                  <speaker>Tecmessa.</speaker>
+                  <l n="961">Atqui cachinnent, homini insultent malis.</l>
+                  <l n="962">Fortassis et, si vivo honorem non dabant, </l>
+                  <l n="963">Flebunt peremptum Martio in discrimine. </l>
+                  <l n="964">Nanque homo sinistra mente possessum bonum </l>
+                  <l n="965">
+                     <milestone unit="verse" n="965"/> Nunquam prius percipere, quam amisit,
+                     solet.</l>
+                  <l n="966">Mors eius illis dulcior, gravior mihi, </l>
+                  <l n="967">Ipsi suavis: namque habet quorum arserat</l>
+                  <l n="968">Amore, mortem, cuius expetens fuit. </l>
+               </sp>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="969">Quid vero in illum riserint tantum? neque</l>
+                  <l n="970">
+                     <milestone unit="verse" n="970"/> Occubuit illis ille: non: verum Deis.</l>
+                  <l n="971">Ad haec Ulysses perperam ergo rideat. </l>
+                  <l n="972">Iudicio eorum periit Aiax: at meo </l>
+                  <pb n="319" type="page"/>
+                  <l n="973">Defunctus abiit lacrumis et luctibus. </l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="974">Heu, heu. </l>
+               </sp>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="975">Audita Teucri vox, mihi ut videor: tace. <milestone unit="verse" n="975"/>
+                  </l>
+                  <l n="976">Porro quiritat carmen affine huic malo. </l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="977">O frater Aiax, o mihi carum caput.</l>
+                  <l n="978">Itane alea omnis iacta, ut omnes autumant? </l>
+               </sp>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="979">Actum est: vir ille, quod scias, Teucre, occidit.</l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="980">O asperam, gravemque fortunam meam! <milestone unit="verse" n="980"/>
+                  </l>
+               </sp>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="981" part="N">Ut nata res est.</l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="981a" part="N">Heu ego miser! miser!</l>
+               </sp>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="982" part="N">Plane gemendum est.</l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="982a" part="N">O gravissimum malum!</l>
+               </sp>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="983" part="N">Hoc, Teucre, verum est.</l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="983a" part="N">Heu miser! quid? filius</l>
+                  <l n="984">Illius in quo Troadis situs loco est?</l>
+               </sp>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="985" part="N">Ellum intus.</l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="985a" part="N">Illum quam potest celerrime <milestone unit="verse" n="985"/>
+                  </l>
+                  <l n="986">Huc intus educ, ne quis ut catulum unicum </l>
+                  <l n="987">Orbae leaenae malevolus rapere occupet. </l>
+                  <l n="988">Abi: move te: curre. nam iacentibus </l>
+                  <l n="989">Omnes student se mortuis illudere. </l>
+               </sp>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="990">Sed adhuc et idem vivus illi sedulo <milestone unit="verse" n="990"/>
+                  </l>
+                  <l n="991">Curare tibi mandavit, ut curas quidem. </l>
+               </sp>
+               <milestone unit="card" n="992" resp="p"/>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="992">O omnium unquam, quae quidem oculis viderim,</l>
+                  <l n="993">Spectaculum horridissumum et gravissumum. </l>
+                  <l n="994">O praeter omnes, quas profectus sum <corr resp="NJ">antehac</corr>, </l>
+                  <l n="995">Laedens meum cor maxume haec profectio, <milestone unit="verse" n="995"/>
+                  </l>
+                  <l n="996">Postquam tuae, Aiax, mortis atrum <orig>nuncium</orig> </l>
+                  <l n="997">Sensi, insequens cuncta, atque vestigans cate. </l>
+                  <l n="998">Nam citus Achivum castra pervolgaverat </l>
+                  <l n="999">Te iam perisse rumor, ut Dei, frequens.</l>
+                  <l n="1000">Quae cum miser longinquus audirem procul, <milestone unit="verse" n="1000"/>
+                  </l>
+                  <l n="1001">Absens gemebam: nunc videns pereo male. </l>
+                  <l n="1002">Me miserum! </l>
+                  <l n="1003">Velum aufer, omne ut, quicquid est, videam malum. </l>
+                  <l n="1004">O dira species perpetrata atrociter, </l>
+                  <l n="1005">Quot corde curas obserens moreris mihi? <milestone unit="verse" n="1005"/>
+                  </l>
+                  <l n="1006">Quae nunc adibo regna? quos homines petam? </l>
+                  <l n="1007">Cui non tua in re crepera, amice, iuverim? </l>
+                  <l n="1008">Telamon meus, tuusque communis pater </l>
+                  <l n="1009">Laetus me, et hilari fronte reducem scilicet </l>
+                  <pb n="320" type="page"/>
+                  <milestone unit="verse" n="1010"/>
+                  <l n="1010">Sine te recipiet? quippini qui vel neque</l>
+                  <l n="1011">In re secunda gaudio diffunditur? </l>
+                  <l n="1012"><orig>Cuinam</orig> ille dicto parcet, aut convicio? </l>
+                  <l n="1013">Me spurium, et ipsa bellica praeda satum</l>
+                  <l n="1014">Ignaviane mentis, an metu, an dolo </l>
+                  <l n="1015">
+                     <milestone unit="verse" n="1015"/> Te prodidisse, frater Aiax, ut tuas</l>
+                  <l n="1016">Domos, et omnem possiderem habentiam. </l>
+                  <l n="1017">Talia severus perperam profabitur </l>
+                  <l n="1018">Asper senecta, iurgiis atrox homo. </l>
+                  <l n="1019">Solo paterno eliminabor denique </l>
+                  <l n="1020">
+                     <milestone unit="verse" n="1020"/> Sermone patris servus, et liber tamen.</l>
+                  <l n="1021">Et haec quidem domi. ast me in arvis Troicis</l>
+                  <l n="1022">Odere multi, sed favent paucissimi.</l>
+                  <l n="1023"><orig>Isthuncque</orig> fructum morte percipio tua. </l>
+                  <l n="1024">Perii. quid ergo? quomodo te, inquam, exuam </l>
+                  <l n="1025">
+                     <milestone unit="verse" n="1025"/> Dirissumo <orig>isthoc</orig> ense? sub quali heu
+                     tibi</l>
+                  <l n="1026">Carnufice vita periit? Hector denique, </l>
+                  <l n="1027">Nec ne sciebas, te peremit mortuus. </l>
+                  <l n="1028">Videte casus per Deos <orig>duum</orig> virum. </l>
+                  <l n="1029">Illo, quod Aiax munerarat, balteo </l>
+                  <l n="1030">
+                     <milestone unit="verse" n="1030"/> Traiectos Hector e curulibus rotis,</l>
+                  <l n="1031">Raptatus usque est donicum <orig>exspirasceret</orig>. </l>
+                  <l n="1032">Contra iste capiens munus illius manu, </l>
+                  <l n="1033">Incubuit illi, morte pessuma cadens. </l>
+                  <l n="1034">Mirum, ni utrumque munus, ensem hunc scilicet </l>
+                  <l n="1035">
+                     <milestone unit="verse" n="1035"/> Furia, et id Orcus fabricarit balteum.</l>
+                  <l n="1036">Ego censeo ista. et talia pleraque omnia </l>
+                  <l n="1037">Deos supremos in homines molirier. </l>
+                  <l n="1038">Diversa sed qui sentit, aut alia omnia, </l>
+                  <l n="1039">Sententia sua stet ille, ego mea. </l>
+               </sp>
+               <milestone unit="card" n="1040" resp="p"/>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="1040">
+                     <milestone unit="verse" n="1040"/> Orationem comprime, atque ut hunc virum</l>
+                  <l n="1041">Mandes sepulchro, quidve dicas, provide.</l>
+                  <l n="1042">Adest parum vir aequus; et forte advenit, </l>
+                  <l n="1043">Utpote malignus, nostra ut insultet mala. </l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="1044">Quis est, ab ipso quem vides exercitu?</l>
+               </sp>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="1045">
+                     <milestone unit="verse" n="1045"/> Menelaus: is, cui classis ista militat.</l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="1046">Video: propinquus cum sit, agnosci potest.</l>
+                  <pb n="321" type="page"/>
+               </sp>
+               <sp>
+                  <speaker>Menelaus.</speaker>
+                  <l n="1047">Heus te volo: istud manibus efferas cave </l>
+                  <l n="1048">Tuis cadaver: verum ut est, missum face. </l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="1049"><orig>Quoia</orig> ista verba funditasti gratia?</l>
+               </sp>
+               <sp>
+                  <speaker>Menelaus.</speaker>
+                  <l n="1050">Visum mihi, et cui paret ipse exercitus. <milestone unit="verse" n="1050"/>
+                  </l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="1051">Quod nomen isti rei praetexitur?</l>
+               </sp>
+               <sp>
+                  <speaker>Menelaus.</speaker>
+                  <l n="1052">Quod quem putavi <orig>eduxe</orig> patria domo</l>
+                  <l n="1053">Amicum Achivis, auxilii fidissumi, </l>
+                  <l n="1054">Deprensus ille Phrygibus est inimicior. </l>
+                  <l n="1055">Totis stativis namque moliens necem <milestone unit="verse" n="1055"/>
+                  </l>
+                  <l n="1056">Impressionem nocte, ut occidat, facit. </l>
+                  <l n="1057">Quod ni Deum aliquis impetum <orig>intercepset</orig> hunc, </l>
+                  <l n="1058">Omnes ad unum nos quidem illius vicem </l>
+                  <l n="1059">Internecivo funere expositi illico </l>
+                  <l n="1060">Essemus, ast is viveret. verum Deus <milestone unit="verse" n="1060"/>
+                  </l>
+                  <l n="1061">Hominis furorem avertit in pecua, et greges. </l>
+                  <l n="1062">Nemo ergo tantis viribus pollens homo </l>
+                  <l n="1063">Existat, illum condere ut tumulo audeat. </l>
+                  <l n="1064">Proiectus <orig>atenim</orig> flavae arenae littore </l>
+                  <l n="1065"><orig>Circummarinis</orig> pabulum alitibus fuat. <milestone unit="verse" n="1065"/>
+                  </l>
+                  <l n="1066">Ne ad haec superbos tolle nimium spiritus. </l>
+                  <l n="1067">Nam si manus nil potuit in vivum mea, </l>
+                  <l n="1068">In mortuum ergo poterit. etiam ingratiis </l>
+                  <l n="1069">Vim faciam, ubi is se comparare noluit, </l>
+                  <l n="1070">Praecepta vivus ut capesseret mea. <milestone unit="verse" n="1070"/>
+                  </l>
+                  <l n="1071">Quamquam illud animi est improbi, cum plebs homo </l>
+                  <l n="1072">Parere nil se postulat melioribus. </l>
+                  <l n="1073">Nam sancta iura perperam ac leges vigent </l>
+                  <l n="1074">In urbe, cui non constat obsequii modus. </l>
+                  <l n="1075">Exercitique nulla sunt moderamina, <milestone unit="verse" n="1075"/>
+                  </l>
+                  <l n="1076">Cui nulla vis est nec pudoris, nec metus. </l>
+                  <l n="1077">Sed si quis usquam est mole crementa artuum, </l>
+                  <l n="1078">Is ruere sese speret et minimo malo. </l>
+                  <l n="1079">Nam qui timoris et pudoris compos est, </l>
+                  <l n="1080">Hunc posse spera sospitem consistere. <milestone unit="verse" n="1080"/>
+                  </l>
+                  <l n="1081">Sed ubi licentia omnis est iniuriae: </l>
+                  <l n="1082">Tunc et statum urbis postmodo tandem illius </l>
+                  <l n="1083">Cursu e secundo pessum iturum existima. </l>
+                  <pb n="322" type="page"/>
+                  <l n="1084">Tamen timoris et mihi constet modus. </l>
+                  <l n="1085">
+                     <milestone unit="verse" n="1085"/> Nec est, quod ubi quid egerim, ut mihi sit
+                     bene[,]</l>
+                  <l n="1086">Non et rependam tantidem, ut mihi sit male.</l>
+                  <l n="1087">Vicissitates haec habent. iste antea </l>
+                  <l n="1088">Fastu tumebat: nunc ego fastus gero. </l>
+                  <l n="1089">Ita funerare hunc opere maxumo veto, </l>
+                  <l n="1090">
+                     <milestone unit="verse" n="1090"/> Ne et ipse, dum istum funeras, funus
+                     fuas.</l>
+               </sp>
+               <milestone unit="card" n="1091" resp="p"/>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="1091">Menelae, ne post dicta sapienter tua</l>
+                  <l n="1092">Videaris ipse iniuriosus mortuis. </l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="1093">Nil mirum, amici, si quid errare assolent</l>
+                  <l n="1094">Homines nec ullis incluti natalibus: </l>
+                  <l n="1095">
+                     <milestone unit="verse" n="1095"/> Quandoquidem et errant talibus verbis
+                     viri</l>
+                  <l n="1096">Propage celebres, atque nobiles domi. </l>
+                  <l n="1097">Primum hoc mihi inque. dicis <orig>isthuc</orig> te virum </l>
+                  <l n="1098"><orig>Adduxe</orig>, Achivis socius armorum ut foret? </l>
+                  <l n="1099">Non ipse per se venit, imperio suo? </l>
+                  <l n="1100">
+                     <milestone unit="verse" n="1100"/> Tune imperator eius es, qui gentibus,</l>
+                  <l n="1101">Quibus fuit dux ille, nullus imperas. </l>
+                  <l n="1102">Non noster es dux ipse, sed Spartae imperas. </l>
+                  <l n="1103">Nec est quod id sit attributum ius tibi, </l>
+                  <l n="1104">Ut imperares potius ei, quam ut is tibi </l>
+                  <l n="1105">
+                     <milestone unit="verse" n="1105"/> Obnoxius, non imperator omnium</l>
+                  <l n="1106">Venisti, ut Aiacem obsequi tibi postules.</l>
+                  <l n="1107">Quorum ipse rex es, hos rege: imperia in eos</l>
+                  <l n="1108">Magnidicus inhibe gravia. ego hunc, seu tu vetas, </l>
+                  <l n="1109">Seu praetor alius, rite tandem et ordine </l>
+                  <l n="1110">
+                     <milestone unit="verse" n="1110"/> Condam sepulchro nil tuas veritus minas.</l>
+                  <l n="1111">Non <orig>faeminae</orig> tuae ergo is huc profectus est, </l>
+                  <l n="1112">Ut gravibus auctorata gens periculis, </l>
+                  <l n="1113">Sed ob sacratum ius, Iovisque sagmina, </l>
+                  <l n="1114">Non ob te: ut et qui nihili inanes penderet. </l>
+                  <l n="1115">
+                     <milestone unit="verse" n="1115"/> Stipare ad ista plurimis praeconibus,</l>
+                  <l n="1116">Nec non duce ipso: tu strepens nil me moves. </l>
+                  <l n="1117">Per me quidem tibi esse eum, qui sis, licet. </l>
+               </sp>
+               <sp>
+                  <speaker>Menelaus.</speaker>
+                  <l n="1118">Periculosum est talia in malis loqui.</l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="1119">Acerba, quamvis aequa, verba vellicant.</l>
+               </sp>
+               <sp>
+                  <speaker>Menelaus.</speaker>
+                  <l n="1120">
+                     <milestone unit="verse" n="1120"/> Et gloriari plurimum arcitenens solet.</l>
+                  <pb n="323" type="page"/>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="1121">Illiberalem non enim artem exerceo.</l>
+               </sp>
+               <sp>
+                  <speaker>Menelaus.</speaker>
+                  <l n="1122">Si scutum haberes, <orig>gloriares</orig> scilicet.</l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="1123">Congrediar, etiam veles, armato tibi.</l>
+               </sp>
+               <sp>
+                  <speaker>Menelaus.</speaker>
+                  <l n="1124">Quam pascit acres lingua spiritus tua.</l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="1125">Fiducia aequi tollere animos fas mihi. <milestone unit="verse" n="1125"/>
+                  </l>
+               </sp>
+               <sp>
+                  <speaker>Menelaus.</speaker>
+                  <l n="1126">Fas nempe et illum me perempto vivere?</l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="1127">Hui! perempto? vivis ergo mortuus.</l>
+               </sp>
+               <sp>
+                  <speaker>Menelaus.</speaker>
+                  <l n="1128">Me sospitarunt numina: huic vero occidi.</l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="1129">Diis <orig>sospitatus</orig> ergo ne temnas Deos.</l>
+               </sp>
+               <sp>
+                  <speaker>Menelaus.</speaker>
+                  <l n="1130"><orig>Egon'</orig> supremas temnerem leges Deum? <milestone unit="verse" n="1130"/>
+                  </l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="1131">Ita, si vetares mortuos tumularier.</l>
+               </sp>
+               <sp>
+                  <speaker>Menelaus.</speaker>
+                  <l n="1132">Meos veto hostes ipse: non enim addecet.</l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="1133">Unquam tibi Aiax pectore advorso obstitit?</l>
+               </sp>
+               <sp>
+                  <speaker>Menelaus.</speaker>
+                  <l n="1134">Fuit hostis hosti, quod tibi et gnarum fuit.</l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="1135">Nam quem doloso clepseris suffragio. <milestone unit="verse" n="1135"/>
+                  </l>
+               </sp>
+               <sp>
+                  <speaker>Menelaus.</speaker>
+                  <l n="1136">Haec arbitrorum lata culpa, non mea.</l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="1137">Perplura fraude frausus es volens mala.</l>
+               </sp>
+               <sp>
+                  <speaker>Menelaus.</speaker>
+                  <l n="1138">Alicuius animum pungit haec oratio.</l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="1139">Non tam, ut videtur, quam te ego pungam mea.</l>
+               </sp>
+               <sp>
+                  <speaker>Menelaus.</speaker>
+                  <l n="1140">Unum eloquar. tumulandus hic nullo modo est. <milestone unit="verse" n="1140"/>
+                  </l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="1141">Audi vicissim et tu istud: hunc tumulabimus.</l>
+               </sp>
+               <sp>
+                  <speaker>Menelaus.</speaker>
+                  <l n="1142">Vidi <orig>tolutiloquente</orig> lingua praeditum,</l>
+                  <l n="1143">Qui navigare <orig>suasset</orig> insano mari; </l>
+                  <l n="1144">Stupere eundem, quando tempestas eum </l>
+                  <l n="1145">Turbaret, ac sese involutum palliis <milestone unit="verse" n="1145"/>
+                  </l>
+                  <l n="1146">Cuivis terendum calce vectori dare. </l>
+                  <l n="1147">Sed te, impetumque <orig>incicurem</orig> linguae tuae, </l>
+                  <l n="1148">E nube parva magna tempestas ruens </l>
+                  <l n="1149">Restinguet, et clamore compescet gravi. </l>
+               </sp>
+               <milestone unit="card" n="1150" resp="p"/>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="1150">Ego autem inanem et perperum vidi virum, <milestone unit="verse" n="1150"/>
+                  </l>
+                  <l n="1151">Aliena propter insolescentem mala. </l>
+                  <l n="1152">Quem cum videret moribus quidam mihi </l>
+                  <l n="1153">Formaque similis, talibus praesens monet: </l>
+                  <l n="1154">Amice, ne sis mortuis iniurius.</l>
+                  <l n="1155">Aliter manet te, me vide, infortunium. <milestone unit="verse" n="1155"/>
+                  </l>
+                  <l n="1156">Istis monebat nullius rei virum. </l>
+                  <l n="1157">Quin tueor illum. non is alius, ut reor, </l>
+                  <pb n="324" type="page"/>
+                  <l n="1158">Fuerit, nisi tu. nonne conieci bene? </l>
+               </sp>
+               <sp>
+                  <speaker>Menelaus.</speaker>
+                  <l n="1159">Abscedo. nam quae turpitudo, velle eum</l>
+                  <l n="1160">
+                     <milestone unit="verse" n="1160"/> Sermone castigare, qui cogi potest?</l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="1161">Abscede. nam quam turpe et inhonestum est mihi,</l>
+                  <l n="1162">Attendere homini effutienti inania? </l>
+               </sp>
+               <milestone unit="card" n="1163" resp="p"/>
+               <div type="textpart"
+                    subtype="anapests"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <l n="1163">Atrox litis certamen erit.</l>
+                     <l n="1164">Quantum potis es, propera Teucer, </l>
+                     <l n="1165">
+                        <milestone unit="verse" n="1165"/> Fossamque cavam citus huic cura.</l>
+                     <l n="1166">Ubi perpetua celebrem cunctis </l>
+                     <l n="1167">Tumulum cum laude tenebit. </l>
+                  </sp>
+               </div>
+
+               <milestone unit="card" n="1168" resp="p"/>
+
+               <div type="textpart"
+                    subtype="dialogue"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Teucer.</speaker>
+                     <l n="1168">At ecce praesto tempori adsunt proxume</l>
+                     <l n="1169">Et gnatus huius atque particeps tori, </l>
+                     <l n="1170">
+                        <milestone unit="verse" n="1170"/> Ut exequantur rite funus mortui.</l>
+                     <l n="1171">O puer, <orig>adesdum</orig>. age accidas supplex patri, </l>
+                     <l n="1172">Qui te in supernas lucis oras edidit: </l>
+                     <l n="1173">Illi asside suppliciter, et manibus tene </l>
+                     <l n="1174">Meas, et huius, et tuas itidem comas, </l>
+                     <l n="1175">
+                        <milestone unit="verse" n="1175"/> Supplicia velamenta. quod si exerciti</l>
+                     <l n="1176">Quidem aggreditur mortuo te avellere,</l>
+                     <l n="1177">Tollatur insepultus e medio male: </l>
+                     <l n="1178">Et eruatur genere toto stirpitus, </l>
+                     <l n="1179">Qualiter ego istum praesico crinem manu. </l>
+                     <l n="1180">
+                        <milestone unit="verse" n="1180"/> Puer, tene illum: serva, habe. nec te
+                        statu</l>
+                     <l n="1181">Demoveat aliquis: ast inhaere huic accidens. </l>
+                     <l n="1182">Nec, o sodales, pro viris muliebriter </l>
+                     <l n="1183">Vos gerite: sed iuvate, donec venero </l>
+                     <l n="1184">Tumulum huic procurans, nullus id sinat licet. </l>
+
+
+
+                  </sp>
+               </div>
+            </div>
+
+            <milestone unit="card" n="1185" resp="p"/>
+
+            <div type="textpart"
+                 subtype="choral"
+                 part="N"
+                 org="uniform"
+                 sample="complete">
+               <div type="textpart"
+                    subtype="strophe"
+                    n="1"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <stage>Stropha <num>VII</num>. </stage>
+                     <l n="1185"><orig>Reciprocifuga</orig> temporibus aetas</l>
+                     <l n="1186">Numerosique volumen aevi, </l>
+                     <l n="1187">Quando desinet miseri </l>
+                     <l n="1188">Tot aerumnas belli </l>
+                     <l n="1189">Nobis duplicans </l>
+                     <l n="1190">Residem ad Troiam, Troiam inquam,</l>
+                     <l n="1191">Probrum maculamque Graecorum? </l>
+                  </sp>
+               </div>
+
+               <milestone unit="card" n="1192" resp="p"/>
+
+               <div type="textpart"
+                    subtype="antistrophe"
+                    n="1"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <stage>Antistropha <num>VII</num>.</stage>
+                     <l n="1192">Utinam is, utinam in aetheris oras </l>
+                     <pb n="325" type="page"/>
+                     <l n="1193">Prius, ipsum aut penetrasset Orcum, </l>
+                     <l n="1194">Quisquis unquam funerea </l>
+                     <l n="1195">In Argivos primus </l>
+                     <l n="1196">Belli arma tulit. </l>
+                     <l n="1197">Criminum heu caput omnium. </l>
+                     <l n="1198">Is nanque homines trucidavit. </l>
+                  </sp>
+               </div>
+               <milestone unit="card" n="1199" resp="p"/>
+
+               <div type="textpart"
+                    subtype="strophe"
+                    n="2"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <stage><num>2.</num> Stropha <num>XI</num>.</stage>
+                     <l n="1199">Is corollarum epulas, </l>
+                     <l n="1200">Dulceque delenifici </l>
+                     <l n="1201">Omne meri proluvium idem, </l>
+                     <l n="1202">Idemque sonos flexanimos </l>
+                     <l n="1203">Abstulit: is noctivaga </l>
+                     <l n="1204">Furta voluptatum amoris, </l>
+                     <l n="1205">Amoresque abolevit. heu, heu! </l>
+                     <l n="1206">Nunc hic iaceo otiosus, </l>
+                     <l n="1207">Aquae pluvio caput </l>
+                     <l n="1208">Rore madens, iniqua Tro-</l>
+                     <l n="1210">-iae monumenta.</l>
+                  </sp>
+               </div>
+               <milestone unit="card" n="1211" resp="p"/>
+
+               <div type="textpart"
+                    subtype="antistrophe"
+                    n="2"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <stage><num>2.</num> Antistropha <num>XI</num>.</stage>
+                     <l n="1211">Ante mihi <orig>noctipetas</orig> </l>
+                     <l n="1212">Insidias propulerat, </l>
+                     <l n="1213">Atque sagittas ferus Aiax. </l>
+                     <l n="1214">Nunc ipse iacet luctifica </l>
+                     <l n="1215">Sorte. quis ergo mihi amor, </l>
+                     <l n="1216">Quaeve voluptas placebit? </l>
+                     <l n="1217">Uti essem, o utinam essem, ubi unda </l>
+                     <l n="1218">Rupes lavitur marina </l>
+                     <l n="1219"><gap reason="ellipsis" resp="Scaliger"/></l>
+                     <l n="1220">Sub aequore Sunii: </l>
+                     <l n="1221">Alloquerer sacras uti </l>
+                     <l n="1222">Tutus Athenas. </l>
+                  </sp>
+               </div>
+            </div>
+            <milestone unit="card" n="1223" resp="p"/>
+            <div type="textpart"
+                 subtype="episode"
+                 part="N"
+                 org="uniform"
+                 sample="complete">
+               <head>Actus Quintus.</head>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="1223">Pedem citavi, cum viderem Agamemnonem <milestone unit="verse" n="1223"/>
+                  </l>
+                  <l n="1224">Ducem huc nec aequis incitatum passibus. </l>
+                  <l n="1225">Sinistra quaedam velle prae se fert loqui. <milestone unit="verse" n="1225"/>
+                  </l>
+               </sp>
+               <sp>
+                  <speaker>Agamemnon.</speaker>
+                  <l n="1226">Tune ille, quem superba dicta et aspera</l>
+                  <l n="1227">Impune <orig>dixe</orig> fertur in nostrum caput?</l>
+                  <pb n="326" type="page"/>
+                  <l n="1228">Tibi dico, captae matris ancillae genus. </l>
+                  <l n="1229">Ingenua quod si sustulisset te parens, </l>
+                  <l n="1230">
+                     <milestone unit="verse" n="1230"/> Quantum tumeres, teque celsum
+                     attolleres,</l>
+                  <l n="1231">Cum litiges nulla in re, homo nulli rei? </l>
+                  <l n="1232">Venisse nec nos <orig>classirectores</orig>, neque </l>
+                  <l n="1233">Duces Achivum, <orig>iureiurando</orig> autumas. </l>
+                  <l n="1234">Sed iuris Aiax, ut probas, venit sui: </l>
+                  <l n="1235">
+                     <milestone unit="verse" n="1235"/> An ista ius est dicta servos proloqui?</l>
+                  <l n="1236">Quis ille, cui tu, tanta vociferans, studes? </l>
+                  <l n="1237">Quo contulit pedem, ubi stetit, ubi et non ego? </l>
+                  <l n="1238">An praeter illum, nullum habent Graeci virum?</l>
+                  <l n="1239">Ergo, ut videmur, iniqua promulgavimus </l>
+                  <l n="1240">
+                     <milestone unit="verse" n="1240"/> Armorum Achillis publice certamina,</l>
+                  <l n="1241">Si Teucer et nos ore convincit malos:</l>
+                  <l n="1242">Nec sat probantur illa ne victis quidem, </l>
+                  <l n="1243">Hac stare, qua tot censuere iudices: </l>
+                  <l n="1244">Verum probris nos undique incilabitis(!). </l>
+                  <l n="1245">
+                     <milestone unit="verse" n="1245"/> Furtim aut petetis, impotes victoriae.</l>
+                  <l n="1246">Istis ab animis moribusque <orig>eimodi</orig> </l>
+                  <l n="1247">Nunquam asseretur legibus suus status,</l>
+                  <l n="1248">Si exigemus iure vincentes loco, </l>
+                  <l n="1249">Et postputandos ante collocabimus. </l>
+                  <l n="1250">
+                     <milestone unit="verse" n="1250"/> Sed comprimenda. haec non lacertosi
+                     viri,</l>
+                  <l n="1251">Vastoque virium impetu, ii tutissumi: </l>
+                  <l n="1252">Sed ubique vincunt, mente qui sana cluent.</l>
+                  <l n="1253">Flagro admonentur pollulo glebarii</l>
+                  <l n="1254">Validi triones rectum itiner insistere, </l>
+                  <l n="1255">
+                     <milestone unit="verse" n="1255"/> Cui generis in te remedium video cito</l>
+                  <l n="1256">Expetere, ni te sapere postules bene. </l>
+                  <l n="1257">Qui natus illo, qui umbra inanis, non vir est, </l>
+                  <l n="1258">Gestis petulce, loqueris et proterviter.</l>
+                  <l n="1259">Non sapere disces? non tuorum conscius </l>
+                  <l n="1260">
+                     <milestone unit="verse" n="1260"/> Natalium, hominem liberum adduces mihi,</l>
+                  <l n="1261">Orationem qui dabit tuam vicem? </l>
+                  <l n="1262">Nam te loquente dicta me incertant tua,</l>
+                  <l n="1263">Ut qui loquelam barbaram haud intellegam. </l>
+               </sp>
+               <milestone unit="card" n="1264" resp="p"/>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="1264">Utrique vestrum Dii bonam mentem duint.</l>
+                  <pb n="327" type="page"/>
+                  <l n="1265">Nil melius, e re quod sit amborum, precer. <milestone unit="verse" n="1265"/>
+                  </l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="1266">Heu quam citatim mortuorum gratia</l>
+                  <l n="1267">Ingrata cedit, atque partes deserit. </l>
+                  <l n="1268">Siquidem hic nec etiam ob parva dictu munia </l>
+                  <l n="1269">Meminit tui, Aiax: quoius olim gratia </l>
+                  <l n="1270">Tuo periclo tot pericla exhauseras. <milestone unit="verse" n="1270"/>
+                  </l>
+                  <l n="1271">Sed omnis iste fluxit ingratus labos. </l>
+                  <l n="1272">O <orig>proloquute</orig> perpera, atque inania:</l>
+                  <l n="1273">Oblitus adeo es, quando nos in <orig>praelio</orig></l>
+                  <l n="1274">Periculosis impeditos cassibus, </l>
+                  <l n="1275">Nulla salutis spe, atque vorsos in fugam <milestone unit="verse" n="1275"/>
+                  </l>
+                  <l n="1276">Eripuit iste vos suo adventu: foris </l>
+                  <l n="1277">Cum fureret ardens ignis in navalibus, </l>
+                  <l n="1278">Flammis adultus, inque classem nauticam </l>
+                  <l n="1279">Irrueret Hector varicans vallum impete.</l>
+                  <l n="1280">Quis haec repressit? non is est, qui fecit haec, <milestone unit="verse" n="1280"/>
+                  </l>
+                  <l n="1281">Quem contulisse <orig>nuspiam</orig> pedem autumas? </l>
+                  <l n="1282"><orig>Veron'</orig> is ille fecit haec, et sedulo? </l>
+                  <l n="1283">Cum nec vocatus, sorte sed ductus manum </l>
+                  <l n="1284">Conseruit, acri comparatus Hectori. </l>
+                  <l n="1285">Nec enim fugacem iecerat sorticulam <milestone unit="verse" n="1285"/>
+                  </l>
+                  <l n="1286">Gleba madentis uber, ast quae primitus </l>
+                  <l n="1287">Educta casside impetum <orig>citasceret</orig>. </l>
+                  <l n="1288">Haec ille fecit, atque ego una interfui,</l>
+                  <l n="1289">Ego servus, atque matre barbara editus. </l>
+                  <milestone unit="card" n="1290" resp="p"/>
+                  <l n="1290">Haec verba, stulte cum strepis, quo respicis? <milestone unit="verse" n="1290"/>
+                  </l>
+                  <l n="1291">Nescis, tui qui <orig>prosator</orig> patris fuit, </l>
+                  <l n="1292">Pelops vetustus, em fuisse barbarum? </l>
+                  <l n="1293">Tuum satorem autem Atreum <orig>sacerrumum</orig> </l>
+                  <l n="1294">Fratri vorandos <orig>apposisse</orig> liberos? </l>
+                  <l n="1295">Te mater autem Cressa protulit, suus <milestone unit="verse" n="1295"/>
+                  </l>
+                  <l n="1296">Quam deprehendit cum viro alieno pater,</l>
+                  <l n="1297">Mutisque iecit pabulum natantibus.</l>
+                  <l n="1298">Taline talis <orig>obiicis</orig> genus mihi? </l>
+                  <l n="1299">Telamone qui sum patre prognatus, meam </l>
+                  <l n="1300">Qui praemium virtutis ex exercitu <milestone unit="verse" n="1300"/>
+                  </l>
+                  <l n="1301">Habuit parentem concubinam: regio </l>
+                  <pb n="328" type="page"/>
+                  <l n="1302">E stirpe Laomedontis: eximiamque ei </l>
+                  <l n="1303">Praeda olim ab omni muneravit Hercules? </l>
+                  <l n="1304">Ergo optumus, duobus optumatibus </l>
+                  <l n="1305">
+                     <milestone unit="verse" n="1305"/> Satus dehonesto generis auctores mei,</l>
+                  <l n="1306">Quos insepultos, in laboribus sitos </l>
+                  <l n="1307">Istis, repellis: nec pudet iactantiae? </l>
+                  <l n="1308">Sed certus esto, si virum hunc repellitis, </l>
+                  <l n="1309">Omnino nos tres et simul repellitis. </l>
+                  <l n="1310">
+                     <milestone unit="verse" n="1310"/> Nam pro hoc mihi periclitanti, nobilem</l>
+                  <l n="1311">Oppetere mortem melius est, quam pro tua </l>
+                  <l n="1312">Uxore: quam pro fratre germano tuo. </l>
+                  <l n="1313">Ad ista, cura non meam rem, sed tuam. </l>
+                  <l n="1314">Si noxis aliqua re mihi, ignavissumus </l>
+                  <l n="1315">
+                     <milestone unit="verse" n="1315"/> Fortasse malis esse, quam audacissumus.</l>
+               </sp>
+               <milestone unit="card" n="1316" resp="p"/>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="1316">Adesse, Ulysse, te putato temperi,</l>
+                  <l n="1317">Nisi hos nevis dirimere, sed committere. </l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="1318">Quid est, amici? vox Atridarum procul</l>
+                  <l n="1319">Super hoc valente mortuo mihi accidit.</l>
+               </sp>
+               <sp>
+                  <speaker>Agamemnon.</speaker>
+                  <l n="1320">
+                     <milestone unit="verse" n="1320"/> An non, Ulysse, verba dictu infamia,</l>
+                  <l n="1321">Et probra ab isto nuper exaudivimus? </l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="1322">Quae probra? culpam haud commeret, me iudice,</l>
+                  <l n="1323">Si quis male audiendo, respondet male. </l>
+               </sp>
+               <sp>
+                  <speaker>Agamemnon.</speaker>
+                  <l n="1324">Male audiit: namque ille me affecit male. </l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="1325">
+                     <milestone unit="verse" n="1325"/> Affecit <orig>adeon'</orig>, ut tibi siet male?</l>
+               </sp>
+               <sp>
+                  <speaker>Agamemnon.</speaker>
+                  <l n="1326">Nam qui insepultum se hoc omissurum neget </l>
+                  <l n="1327">Cadaver, ut non tumulet iniussu meo. </l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="1328">Licetne amico proloqui verum tibi</l>
+                  <l n="1329">Tua haud minore, quam prius, cum gratia?</l>
+               </sp>
+               <sp>
+                  <speaker>Agamemnon.</speaker>
+                  <l n="1330">
+                     <milestone unit="verse" n="1330"/> Licet. nam et esset <orig>caeteroqui</orig> iniurium:</l>
+                  <l n="1331">Praecipuum amicum cum te in Argivis putem. </l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="1332">Audi. per ego te caelites, ne proiici</l>
+                  <l n="1333">Virum insepultum hunc siris inclementius: </l>
+                  <l n="1334">Nec eo usque te odii provehat licentia,</l>
+                  <l n="1335">
+                     <milestone unit="verse" n="1335"/> Ut omne iusque fasque prosubigas pede.</l>
+                  <l n="1336">Mihi omnium ille pessume infensus fuit, </l>
+                  <l n="1337">Ex quo arma Achilli lite nostra evicimus. </l>
+                  <l n="1338">Sed tamen ego illum tam male animatum mihi </l>
+                  <pb n="329" type="page"/>
+                  <l n="1339">Non usque nauci fecerim, quin omnium</l>
+                  <l n="1340">Illum virorum, post Achillem, acerrumum, <milestone unit="verse" n="1340"/>
+                  </l>
+                  <l n="1341">Quicunque Troiam accessimus, vocaverim. </l>
+                  <l n="1342">Ut flocci et illum facere, caussae non siet.</l>
+                  <l n="1343">Nam non viro illi, sed <corr>Deorum</corr> legibus</l>
+                  <l n="1344">Iniurius sis. caeterum virum bonum </l>
+                  <l n="1345">Incessere haud ius mortuum, licet oderis. <milestone unit="verse" n="1345"/>
+                  </l>
+               </sp>
+               <milestone unit="card" n="1346" resp="p"/>
+               <sp>
+                  <speaker>Agamemnon.</speaker>
+                  <l n="1346">Haec isto, Ulysse, pro viro iurgas mihi?</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="1347">Plane. sed odi, odisse cum licuit mihi.</l>
+               </sp>
+               <sp>
+                  <speaker>Agamemnon.</speaker>
+                  <l n="1348">Non et iacenti te quoque insultare fas?</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="1349">Inhonesta, Atrida, lucra ne placeant tibi.</l>
+               </sp>
+               <sp>
+                  <speaker>Agamemnon.</speaker>
+                  <l n="1350">Ubique regem colere pietatem haud facul. <milestone unit="verse" n="1350"/>
+                  </l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="1351">Scitum est, amicis gerere morem, et obsequi.</l>
+               </sp>
+               <sp>
+                  <speaker>Agamemnon.</speaker>
+                  <l n="1352">Parere oportet regibus virum bonum.</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="1353">Quiesce. victus ore vicisti tuo.</l>
+               </sp>
+               <sp>
+                  <speaker>Agamemnon.</speaker>
+                  <l n="1354">Memento, quali gratiam hanc confers viro.</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="1355">Fuit mihi hostis ille, sed fortis tamen. <milestone unit="verse" n="1355"/>
+                  </l>
+               </sp>
+               <sp>
+                  <speaker>Agamemnon.</speaker>
+                  <l n="1356">Quid fiet, ubi sic mortuo hosti honorem habes?</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="1357">Virtus movet me, quam simultates, magis.</l>
+               </sp>
+               <sp>
+                  <speaker>Agamemnon.</speaker>
+                  <l n="1358">Sunt, qui solent haec facere, vecordes viri.</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="1359">At, qui boni fuere, post fiunt mali.</l>
+               </sp>
+               <sp>
+                  <speaker>Agamemnon.</speaker>
+                  <l n="1360">Tales amicos esse postules tibi? <milestone unit="verse" n="1360"/>
+                  </l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="1361">Non laudo duram mentem, et intractabilem.</l>
+               </sp>
+               <sp>
+                  <speaker>Agamemnon.</speaker>
+                  <l n="1362">Tu nos probabis hoc die ignavissumos.</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="1363">At nos tu Achivis omnibus iustissumos.</l>
+               </sp>
+               <sp>
+                  <speaker>Agamemnon.</speaker>
+                  <l n="1364">Iubetis, istud funus exequi sinam?</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="1365">Iubemus. idem nam manet nos exitus. <milestone unit="verse" n="1365"/>
+                  </l>
+               </sp>
+               <sp>
+                  <speaker>Agamemnon.</speaker>
+                  <l n="1366">Ut rebus homines omnibus satagunt sui.</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="1367">Cuiusne potius, quam mei, <orig>sategerim</orig>?</l>
+               </sp>
+               <sp>
+                  <speaker>Agamemnon.</speaker>
+                  <l n="1368">Ita ut tuum hoc sit, non meum quicquid est rei.</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="1369">Omnino. utrumvis feceris, bene feceris.</l>
+               </sp>
+               <sp>
+                  <speaker>Agamemnon.</speaker>
+                  <l n="1370">Verum mihi istud autumanti, creduas: <milestone unit="verse" n="1370"/>
+                  </l>
+                  <l n="1371">Vel maius isto munus attribuam tibi. </l>
+                  <l n="1372">At vel sepulchro affectus, inimicus mihi </l>
+                  <l n="1373">Erit iste, tu fac omne quod facto est opus.</l>
+               </sp>
+               <sp>
+                  <speaker>Chorus.</speaker>
+                  <l n="1374">Quicunque, Ulysse, sapere te non dixerit</l>
+                  <l n="1375">Talem virum, et tantum, ille vero desipit. <milestone unit="verse" n="1375"/>
+                  </l>
+                  <pb n="330" type="page"/>
+               </sp>
+               <milestone unit="card" n="1376" resp="p"/>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="1376">At ego interim praedico Teucrum in posterum</l>
+                  <l n="1377">Tantum paratum amare me, quantum oderam. </l>
+                  <l n="1378">Meamque opem isti funerando conferam, </l>
+                  <l n="1379">Meum laborem: nilque omittam, quod viris </l>
+                  <l n="1380">
+                     <milestone unit="verse" n="1380"/> Praestare cunctos addecet fortissumis.</l>
+               </sp>
+               <sp>
+                  <speaker>Teucer.</speaker>
+                  <l n="1381">Generose Ulysse, et omnia haec <orig>dixti</orig> bene,</l>
+                  <l n="1382">Et laude, quanquam me fefellisti spei. </l>
+                  <l n="1383">Nam qui huic Achivum olim omnium inimicissumus, </l>
+                  <l n="1384">Iuvisti amice solus hunc, et mortuo </l>
+                  <l n="1385">
+                     <milestone unit="verse" n="1385"/> Vivus iacenti noluisti illudere,</l>
+                  <l n="1386">Ut ille vecors imperator, ac levis: </l>
+                  <l n="1387">Ipse, inquam, et alter frater, illum proiici </l>
+                  <l n="1388">Studuere lacerandum insepultum, inconditum. </l>
+                  <l n="1389">Qui illos Olympi rector huius Iuppiter </l>
+                  <l n="1390">
+                     <milestone unit="verse" n="1390"/> Diraeque memores, atque perfica ultio,</l>
+                  <l n="1391">Lacerandum uti istam proiici immerito virum </l>
+                  <l n="1392">Studuere, ita omnes perduint malos male. </l>
+                  <l n="1393">Sed, o propages clara Laertae senis, </l>
+                  <l n="1394">Non siverim te funus hoc contingere, </l>
+                  <l n="1395">
+                     <milestone unit="verse" n="1395"/> Ut <orig>nequid</orig> axim mortuo huic ingratiis.</l>
+                  <l n="1396">Quod potes, in aliis nos iuva. et si quem exerciti</l>
+                  <l n="1397">Abducere animo est, me lubente feceris. </l>
+                  <l n="1398">Ego apparatum caetera ibo. te interim </l>
+                  <l n="1399">In nos fuisse memineris munem virum.</l>
+               </sp>
+               <sp>
+                  <speaker>Vlysses.</speaker>
+                  <l n="1400">
+                     <milestone unit="verse" n="1400"/> Velim quidem. at si munia ista me exequi</l>
+                  <l n="1401">Tibi non amicum est, laudo consilium. vale.</l>
+               </sp>
+               <div type="textpart"
+                    subtype="anapests"
+                    part="N"
+                    org="uniform"
+                    sample="complete">
+                  <sp>
+                     <speaker>Teucer.</speaker>
+                     <l n="1402">Sat. tempus enim iam multum agitur.</l>
+                     <l n="1403">Sed fossam pars, ite, capacem</l>
+                     <l n="1404">Properate manu: pars tripes autem </l>
+                     <l n="1405">Et lustralibus undis tepidum</l>
+                     <l n="1406">Ponite labrum: pars una domo</l>
+                     <l n="1407">Efferat intus duri insignia</l>
+                     <l n="1408">Arma duelli.</l>
+                     <l n="1409">Sed tu, quantum potes, alme puer,</l>
+                     <l n="1410">Patrios artus mecum amplexus,</l>
+                     <l n="1411">Attolle, leva. namque cruoris</l>
+                     <l n="1412">Salientis adhuc tepidi tullii </l>
+                     <pb n="331" type="page"/>
+                     <l n="1413">Efflant. <orig>Agesis</orig>, quisquis amicus</l>
+                     <l n="1414">Ades hic praesens, propera, curre:</l>
+                     <l n="1415">Impende viro forti officium.</l>
+                     <l n="1416">Ac nemo quidem, queis loquor, horum</l>
+                     <l n="1417">Aiace fuit melior vir.</l>
+                  </sp>
+                  <sp>
+                     <speaker>Chorus.</speaker>
+                     <l n="1418">Quam multa viris licet expertis</l>
+                     <l n="1419">Temere discere. sed inexpertus</l>
+                     <l n="1420">Praesagus nemo futuri est.</l>
+                  </sp>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
