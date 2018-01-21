@@ -2,9 +2,12 @@
 
 The Epidoc XML encoded Latin text to be included in the Perseus Digital Library, made freely available under a [CC-BY license](LICENSE.md).
 
+The files were checked with [hooktest](https://github.com/Capitains/HookTest)
+
 ## Contents ##
 
 * The CTS and Epidoc XML texts are in [data](/data) directory
+* The file with the edition of Scaliger's translation is [tlg0011.tlg003.perseus-lat1.xml](https://github.com/nevenjovanovic/sophocles-ajax-latinus/blob/master/data/tlg0011/tlg003/tlg0011.tlg003.perseus-lat1.xml)
 
 ### Editor of the electronic version ###
 
