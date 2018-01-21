@@ -2,7 +2,7 @@
 
 The Epidoc XML encoded Latin text to be included in the Perseus Digital Library, made freely available under a [CC-BY license](LICENSE.md).
 
-The files were checked with [hooktest](https://github.com/Capitains/HookTest)
+The files were checked with [hooktest](https://github.com/Capitains/HookTest).
 
 ## Contents ##
 
