@@ -59,7 +59,7 @@
       </encodingDesc>
 
       <profileDesc>
-         <langUsage default="false">
+         <langUsage>
             <language ident="lat">Latin</language>
             <language ident="grc">Greek</language>
          </langUsage>
@@ -102,13 +102,10 @@
             <l>Σὺ μηδὲν ἐκφαίνεις ἔπος ἀνελεύθερον;</l>
          </div>
       </front>
-      <body>
+      <body n="Aj.">
          <div type="translation"
               n="urn:cts:greekLit:tlg0011.tlg003.perseus-lat1"
-              xml:lang="lat"
-              part="N"
-              org="uniform"
-              sample="complete">
+              xml:lang="lat">
             <head>Sophoclis Aiax Lorarius, stylo tragico a Iosepho Scaligero Iulii filio
                translatus.</head>
             <pb n="291"/>

@@ -9,7 +9,7 @@
       <ti:label xml:lang="eng">Ajax</ti:label>
       <ti:description xml:lang="eng">Sophocles, creator; Sophocles the plays and fragments with critical notes, commentary, and translation in English prose Part 7 The Ajax; Jebb, Richard Claverhouse, Sir, 1841-1905, editor, translator. Cambridge: Cambridge University Press. 1893.</ti:description>
    </ti:translation>
-   <ti:translation xml:lang="grc" workUrn="urn:cts:greekLit:tlg0011.tlg003" urn="urn:cts:greekLit:tlg0011.tlg003.perseus-lat1">
+   <ti:translation xml:lang="lat" workUrn="urn:cts:greekLit:tlg0011.tlg003" urn="urn:cts:greekLit:tlg0011.tlg003.perseus-lat1">
       <ti:label xml:lang="eng">Ajax</ti:label>
       <ti:description xml:lang="eng">Sophocles, creator; Scaliger, Joseph-Juste, 1540-1609, editor, translator. 1574.</ti:description>
    </ti:translation>
